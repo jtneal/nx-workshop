@@ -1,9 +1,5 @@
-/**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
- *
- * By Hakim El Hattab, http://hakim.se
- */
-@import url(./fonts/source-sans-pro/source-sans-pro.css);
+@import url("./fonts/source-sans-pro/source-sans-pro.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,600;0,900;1,100;1,400&family=Oregano:ital@0;1&display=swap");
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222;
 }
@@ -12,36 +8,36 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #191919;
-  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
+  --r-background-color: #100f0f;
+  --r-main-font: Libre Franklin, sans-serif;
   --r-main-font-size: 42px;
   --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Source Sans Pro, Helvetica, sans-serif;
-  --r-heading-color: #fff;
+  --r-heading-font: Libre Franklin, sans-serif;
+  --r-heading-color: #e8ebdc;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
-  --r-heading-text-transform: uppercase;
-  --r-heading-text-shadow: none;
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: 1px 3px 5px #000;
   --r-heading-font-weight: 600;
-  --r-heading1-text-shadow: 1px 5px 8px #000;
+  --r-heading1-text-shadow: 1px 3px 5px #000;
   --r-heading1-size: 2.5em;
   --r-heading2-size: 1.6em;
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #42affa;
-  --r-link-color-dark: rgb(19.8216494845, 155.4536082474, 248.7783505155);
-  --r-link-color-hover: rgb(94.35, 187, 250.75);
-  --r-selection-background-color: rgba(66, 175, 250, 0.75);
+  --r-link-color: #0cc;
+  --r-link-color-dark: rgb(0, 173.4, 173.4);
+  --r-link-color-hover: rgb(0, 249.9, 249.9);
+  --r-selection-background-color: rgba(0, 204, 204, 0.75);
   --r-selection-color: #fff;
   --r-overlay-element-bg-color: 240, 240, 240;
   --r-overlay-element-fg-color: 0, 0, 0;
 }
 
 .reveal-viewport {
-  background: #191919;
+  background: #100f0f;
   background-color: var(--r-background-color);
 }
 
@@ -356,4 +352,12 @@ section.has-light-background, section.has-light-background h1, section.has-light
   .backgrounds {
     background-color: var(--r-background-color);
   }
+}
+.accent {
+  color: #0cc;
+}
+
+.special-font {
+  font-family: "Oregano", cursive;
+  font-size: 4rem;
 }

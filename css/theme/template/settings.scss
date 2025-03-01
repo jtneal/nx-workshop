@@ -17,11 +17,11 @@ $blockMargin: 20px;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'League Gothic', Impact, sans-serif;
-$headingColor: #eee;
+$headingColor: #91ebf4;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
-$headingTextShadow: none;
+$headingTextShadow: 1px 5px 8px #000;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
@@ -33,11 +33,11 @@ $heading4Size: 1.00em;
 $codeFont: monospace;
 
 // Links and actions
-$linkColor: #13DAEC;
+$linkColor: #91ebf4;
 $linkColorHover: color.scale( $linkColor, $lightness: 20% );
 
 // Text selection
-$selectionBackgroundColor: #FF5E99;
+$selectionBackgroundColor: #397dd0;
 $selectionColor: #fff;
 
 // Colors used for UI elements that are overlaid on top of
