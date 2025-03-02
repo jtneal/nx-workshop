@@ -1,8 +1,119 @@
-.accent {
+////////////////////////////////////////////////////////////////////////////////
+// Reveal.js Overwrites
+////////////////////////////////////////////////////////////////////////////////
+
+.reveal {
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.9em;
+  }
+
+  h3 {
+    font-size: 0.9em;
+  }
+
+  ul li,
+  ol li {
+    margin-bottom: 0.75em;
+  }
+
+  ol li {
+    color: $accentColor;
+    font-weight: 600;
+    padding-left: 16px;
+
+    span {
+      color: #fff;
+      font-weight: initial;
+    }
+  }
+
+  pre code {
+    border: 1px solid $accentColor;
+    border-radius: 0.25em;
+    font-size: 125%;
+    padding: 1em;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Utility Classes
+////////////////////////////////////////////////////////////////////////////////
+
+.accent-color {
   color: $accentColor;
 }
 
-.special-font {
-  font-family: $specialFont;
-  font-size: 4rem;
+.accent-font {
+  font-family: $accentFont;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.small {
+  font-size: 65% !important;
+}
+
+.smaller {
+  font-size: 50% !important;
+}
+
+.spaced {
+  margin-top: 3em !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Specific Slides
+////////////////////////////////////////////////////////////////////////////////
+
+#author {
+  img {
+    width: 60%;
+  }
+}
+
+#egypt-lesson {
+  img {
+    border: 16px solid #fff;
+    width: 75%;
+  }
+}
+
+#nx-website {
+  img {
+    border: 8px solid rgba(0, 0, 0, 0.5);
+    width: 75%;
+  }
+}
+
+#enhance-your-llm {
+  strong {
+    font-weight: 600;
+  }
+}
+
+#nx-ci {
+  strong {
+    font-weight: 600;
+  }
 }

@@ -12,23 +12,163 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>
+        <!-- Slide 1 -->
+        <section data-background-color="rgba(0, 0, 0, 0.45)">
           <h1>Nx Workshop</h1>
-          <h6><span class="accent special-font">Jason Neal</span></h6>
+          <h6><span class="accent-color accent-font">Jason Neal</span></h6>
+          <aside class="notes">Alright, let's go ahead and get started!</aside>
         </section>
 
-        <section>Slide 2</section>
+        <!-- Slide 2 -->
+        <section id="egypt-intro">
+          <aside class="notes">
+            <p>
+              This is definitely one of my favorite photos that I've taken. This is from a 2 week trip back in March of
+              2022 where I got to explore both upper and lower Egypt. I even took a cruise down the Nile! It was a
+              phenonemal experience that I recommend everyone have on their bucket list!
+            </p>
+            <p>Who knows which pyramid this is?</p>
+            <p>You didn't think there would be a pop quiz, huh?</p>
+            <p>The Pyramid of Khafre!</p>
+          </aside>
+        </section>
+
+        <!-- Slide 3 -->
+        <section data-background-color="rgba(0, 0, 0, 0.75)" id="egypt-lesson">
+          <img alt="photo of the 3 main pyramids on the Giza plateau" src="img/giza-plateau.jpg" />
+          <aside class="notes">
+            <p>
+              When you think of Egypt, you probably think of these 3 main pryamids on the Giza plateau. These are the
+              Pyramid of Menkaure, the Pyramid of Khafre, and the Pyramid of Khufu, also known as the Great Pyramid.
+            </p>
+            <p>You didn't know you were in for an Egypt lesson, huh?</p>
+            <p>
+              The ancient Egyptians demonstrated exceptional precision in their construction methods, most notably seen
+              in the building of the pyramids at Giza, where massive stone blocks fit together with minimal gaps,
+              showcasing their advanced understanding of geometry, precise measurements, and meticulous planning.
+            </p>
+          </aside>
+        </section>
+
+        <!-- Slide 4 -->
+        <section data-background-color="rgba(0, 0, 0, 0.75)" id="egypt-relevance">
+          <h2>Wait!</h2>
+          <p>What does this have to do with Nx?</p>
+          <ul class="small spaced">
+            <li class="fragment">Quarrying Process</li>
+            <li class="fragment">Rough Shaping and Cutting</li>
+            <li class="fragment">Transportation</li>
+            <li class="fragment">Stone Cutting and Fitting</li>
+            <li class="fragment">Installation and Finishing</li>
+          </ul>
+          <aside class="notes">
+            <p>Wait! What does this have to do with Nx?</p>
+            <p>Well, you don't build any pyramids without a plan, and the ability to execute on that plan, right?</p>
+            <p><strong>Quarrying Process</strong> - extracting stones from the bedrock.</p>
+            <p><strong>Rough Shaping and Cutting</strong> - make the stone as small as possible for transport.</p>
+            <p><strong>Transportation</strong> - the king's chamber rose granite came from Aswan, 560 miles away.</p>
+            <p><strong>Stone Cutting and Fitting</strong> - preparing stone blocks to be installed onsite.</p>
+            <p><strong>Installation and Finishing</strong> - lift and set the stones in place.</p>
+            <p>
+              At the end of the day, the process of building a pyramid is not much different than the process of
+              building a modern enterprise system. You need a strong, level foundation to build from that can support
+              the eventual growth and complexity that will come.
+            </p>
+            <p>That's what Nx provides!</p>
+            <p>
+              Modern enterprise systems are made up of hundreds, if not thousands, of individual blocks, or, modules.
+              Each of those modules must be composed together into a single cohesive experience for the end user.
+            </p>
+          </aside>
+        </section>
+
+        <!-- Slide 5 -->
+        <section data-background-color="rgba(0, 0, 0, 0.75)" id="author">
+          <div class="flex speaker-title">
+            <div class="flex-1">
+              <img alt="Photo of Jason Neal" class="circle" src="img/jason-neal-photo.jpg" />
+            </div>
+            <div class="flex flex-2 ai-center">
+              <div>
+                <h2>Jason Neal</h2>
+                <h3><a href="https://x.com/JNealCodes" target="_blank">@JNealCodes</a></h3>
+              </div>
+            </div>
+          </div>
+          <ul class="small">
+            <li>
+              Staff Software Engineer at <a href="https://www.rocketmortgage.com" target="_blank">Rocket Mortgage</a>
+            </li>
+            <li>Host of <a href="https://www.youtube.com/@qualitydecoded9623" target="_blank">Quality Decoded</a></li>
+            <li>Fascinated by ancient history</li>
+          </ul>
+          <aside class="notes">
+            <p>Alright, I guess that's a wrap on the Egypt lesson for today at least.</p>
+            <p>Hi! I'm Jason Neal</p>
+            <p>I'm a Staff Software Engineer at Rocket Mortgage.</p>
+            <p>I'm the host of Quality Decoded, a podcast and YouTube series.</p>
+            <p>And lastly, if you can't already tell, I'm fascinated by ancient history.</p>
+          </aside>
+        </section>
+
+        <!-- Slide 6 -->
+        <section data-background-color="rgba(0, 0, 0, 0.75)" id="what-is-nx">
+          <h2>What is Nx?</h2>
+          <p class="smaller">An extensible open-source dev tool that helps teams develop at scale.</p>
+          <ol class="small spaced">
+            <li class="fragment"><span>Modern Tools and Frameworks</span></li>
+            <li class="fragment"><span>Share Code</span></li>
+            <li class="fragment"><span>Leverage Dependency Graph</span></li>
+          </ol>
+          <aside class="notes">
+            <p>What is Nx?</p>
+            <p>
+              Nx is an extensible open-source dev tool that helps teams develop at scale by providing 3 main things:
+            </p>
+            <p>
+              <strong>1.</strong> Out of the box configuration of frameworks and modern tools so that you can focus more
+              on your application and less on configuration.
+            </p>
+            <p>
+              <strong>2.</strong> Easily share your code across multiple applications or teams, while enforcing clean
+              integration points.
+            </p>
+            <p>
+              <strong>3.</strong> Understand the dependency graph of your codebase, so that you can run tests or other
+              actions on exactly the areas affected by a PR, and no more.
+            </p>
+          </aside>
+        </section>
+
+        <!-- Slide 7 -->
+        <section data-background-color="rgba(0, 0, 0, 0.75)" id="nx-website">
+          <img alt="screenshot of the nx.dev website" src="img/nx-website.png" />
+        </section>
+
+        <!-- Slide 8 -->
+        <section data-background-color="rgba(0, 0, 0, 0.75)" id="create-nx-workspace">
+          <h3>Create Nx Workspace</h3>
+          <pre class="spaced">
+            <code class="language-shell" data-trim>
+              $ npx create-nx-workspace@latest
+            </code>
+          </pre>
+        </section>
+
+        <!-- Slide 9 -->
+        <section data-background-color="rgba(0, 0, 0, 0.75)" id="workspace-basics">
+          <h3>Workspace Basics</h3>
+        </section>
       </div>
     </div>
     <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
     <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/notes/notes.js"></script>
     <script src="plugin/zoom/zoom.js"></script>
     <script>
       Reveal.initialize({
         hash: true,
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
+        plugins: [RevealHighlight, RevealNotes, RevealZoom],
       });
     </script>
   </body>

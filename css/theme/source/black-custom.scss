@@ -13,14 +13,12 @@ $backgroundColor: #100f0f;
 
 $mainColor: #fff;
 $headingColor: #e8ebdc;
-$accentColor: #0cc;
 
 $mainFontSize: 42px;
 $mainFont: "Libre Franklin", sans-serif;
 $headingFont: "Libre Franklin", sans-serif;
-$specialFont: "Oregano", cursive;
+$accentFont: "Oregano", cursive;
 $headingTextShadow: 1px 3px 5px #000;
-$heading1TextShadow: $headingTextShadow;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
 $headingFontWeight: 600;
@@ -35,6 +33,14 @@ $heading4Size: 1em;
 
 // Change text colors against light slide backgrounds
 @include light-bg-text-color(#222);
+
+@mixin bodyBackground() {
+  background-color: $backgroundColor;
+  background-image: url("../../img/pyramid-of-khafre.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
 
 // Theme template ------------------------------
 @import "../template/theme";

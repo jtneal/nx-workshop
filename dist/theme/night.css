@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Black theme for reveal.js.
  *
@@ -159,7 +160,15 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal ul {
-  list-style-type: disc;
+  list-style-type: none;
+}
+
+.reveal ul li:before {
+  content: "•";
+  color: #0cc;
+  font-weight: bold;
+  margin-left: -20px;
+  margin-right: 10px;
 }
 
 .reveal ul ul {
@@ -311,6 +320,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   color: var(--r-link-color-hover);
   text-shadow: none;
   border: none;
+  text-decoration: underline;
 }
 
 .reveal .roll span:after {
