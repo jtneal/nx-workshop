@@ -1,3 +1,5 @@
+@import "./utilities";
+
 ////////////////////////////////////////////////////////////////////////////////
 // Reveal.js Overwrites
 ////////////////////////////////////////////////////////////////////////////////
@@ -9,7 +11,20 @@
   }
 
   h3 {
-    font-size: 0.9em;
+    font-size: 1.2em;
+    margin-bottom: 0.9em;
+  }
+
+  h4 {
+    font-size: 0.7em;
+  }
+
+  h5 {
+    font-size: 0.5em;
+  }
+
+  strong {
+    font-weight: 600;
   }
 
   ul li,
@@ -32,6 +47,7 @@
     border: 1px solid $accentColor;
     border-radius: 0.25em;
     font-size: 125%;
+    line-height: 1.2;
     padding: 1em;
   }
 }
@@ -59,6 +75,22 @@
 }
 
 .spaced {
+  margin-top: 2em !important;
+}
+
+.spaced-less {
+  margin-top: 1.5em !important;
+}
+
+.spaced-even-less {
+  margin-top: 1em !important;
+}
+
+.spaced-small {
+  margin-top: 0.5em !important;
+}
+
+.spaced-more {
   margin-top: 3em !important;
 }
 
@@ -78,8 +110,69 @@
   align-items: center;
 }
 
+.jc-center {
+  justify-content: center;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
 .circle {
   border-radius: 50%;
+}
+
+.list-reveal li.visible {
+  opacity: 0.5 !important;
+
+  &.current-fragment {
+    opacity: 1 !important;
+  }
+}
+
+.shaded {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 16px;
+}
+
+.bottom-padded {
+  padding-bottom: 21px;
+}
+
+.code-columns {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+
+  pre {
+    width: 100%;
+  }
+}
+
+.code-only {
+  max-height: 620px !important;
+}
+
+.photo-border {
+  border: 16px solid #fff;
+}
+
+.fragment-list {
+  font-size: 65%;
+  margin-top: 1.2em !important;
+  max-width: 80%;
+
+  li.visible {
+    opacity: 0.75 !important;
+
+    &.current-fragment {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.quotation {
+  padding: 16px !important;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -87,33 +180,48 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #author {
-  img {
-    width: 60%;
+  h3 {
+    font-size: 0.9em;
   }
 }
 
-#egypt-lesson {
-  img {
-    border: 16px solid #fff;
-    width: 75%;
+#caching-9 {
+  pre code {
+    height: 275px;
   }
 }
 
-#nx-website {
-  img {
-    border: 8px solid rgba(0, 0, 0, 0.5);
-    width: 75%;
+#common-tasks-4,
+#common-tasks-5,
+#common-tasks-6,
+#common-tasks-7,
+#common-tasks-8 {
+  pre code {
+    height: 150px;
   }
 }
 
-#enhance-your-llm {
-  strong {
-    font-weight: 600;
+#folders-9 {
+  pre code {
+    height: 200px;
   }
 }
 
-#nx-ci {
-  strong {
-    font-weight: 600;
+#tasks-3 {
+  pre code {
+    height: 390px;
+  }
+}
+
+#explore-13 {
+  iframe {
+    height: 650px;
+    width: 100%;
+  }
+}
+
+#libraries-12 {
+  pre code {
+    max-height: 600px;
   }
 }
