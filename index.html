@@ -15,7 +15,22 @@
         <section data-background-color="rgba(0, 0, 0, 0.45)">
           <h1>Nx Workshop</h1>
           <h6><span class="accent-color accent-font">Jason Neal</span></h6>
-          <aside class="notes"><p>Alright, let's go ahead and get started!</p></aside>
+          <aside class="notes">
+            <p>
+              Alright, before we get started, let me talk for a moment about the format here. I set this up as a
+              workshop because, if you're anything like me, my eyes start to glaze over during long presentations with
+              lots of slides because it's just too much to take in all at once. I learn a lot better (and faster) from
+              just getting hands-on with new tech.
+            </p>
+            <p>
+              So, to set expectations, there are still going to be a ton of slides and content that I will be going over
+              rather quickly - in about 30 minutes. My recommendation is to NOT take notes during the presentation. That
+              may sound crazy, but, by the time you finish writing your note, I'll likely be 2 slides ahead. This whole
+              presentation is available on my public GitHub, so you can always refer to the content later and take notes
+              at your own pace without having to feel rushed.
+            </p>
+            <p>Alright, let's go ahead and get started!</p>
+          </aside>
         </section>
 
         <section id="egypt">
@@ -2860,6 +2875,504 @@
                 that are all placed into the packages folder.
               </p>
             </aside>
+          </section>
+        </section>
+
+        <section id="workshop">
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-1">
+            <h2>Workshop</h2>
+            <p>Prerequisites:</p>
+            <ul class="fragment-list">
+              <li class="fragment">
+                <a href="https://nodejs.org/en/download" target="_blank">Node.js</a> (ideally v22/LTS)
+              </li>
+              <li class="fragment">
+                <a href="https://code.visualstudio.com/Download" target="_blank">VSCode</a> (or whatever you prefer)
+              </li>
+              <li class="fragment">
+                <a href="https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console" target="_blank">
+                  Nx Console
+                </a>
+                (if using VSCode)
+              </li>
+            </ul>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-2">
+            <h3>Create Nx Workspace</h3>
+            <pre>
+              <code class="language-shell font-size-55 code-only" data-trim>
+                $ npx create-nx-workspace@latest
+
+                Need to install the following packages:
+                create-nx-workspace@20.6.0
+                Ok to proceed? (y) y
+
+                NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
+
+                ✔ Where would you like to create your workspace? · nx-demo
+                ✔ Which stack do you want to use? · angular
+                ✔ Integrated monorepo, or standalone project? · integrated
+                ✔ Application name · web
+                ✔ Which bundler would you like to use? · esbuild
+                ✔ Default stylesheet format · scss
+                ✔ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? · No
+                ✔ Which unit test runner would you like to use? · jest
+                ✔ Test runner to use for end to end (E2E) tests · playwright
+                ✔ Which CI provider would you like to use? · github
+
+                NX   Creating your v20.6.0 workspace.
+
+                ✔ Installing dependencies with npm
+                ✔ Successfully created the workspace: nx-demo.
+                ✔ Nx Cloud has been set up successfully
+                ✔ CI workflow has been generated successfully
+
+                NX   Your CI setup is almost complete.
+
+                Finish it by visiting: https://cloud.nx.app/connect/Y6eYBo7MrL
+                
+                 NX   Welcome to the Nx community! 👋
+                
+                🌟 Star Nx on GitHub: https://github.com/nrwl/nx
+                📢 Stay up to date on X: https://x.com/nxdevtools
+                💬 Discuss Nx on Discord: https://go.nx.dev/community
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-3">
+            <h3>Open VSCode</h3>
+            <pre>
+              <code class="language-shell font-size-100 code-only" data-trim>
+                $ cd nx-demo
+                $ code .
+              </code>
+            </pre>
+            <aside class="notes">
+              <p>
+                Just like when you clone a repo, you'll need to cd into the newly created directly. And, of course if
+                you're using VSCode, you can just do code . to open it.
+              </p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-4">
+            <img alt="screenshot of new nx workspace" src="img/nx-workspace.png" />
+            <aside class="notes">
+              <p>
+                Once you are done, you should have a workspace that looks something like this. Now, before we go
+                exploring the workspace, I want to generate a few more things, so let's do that!
+              </p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-5">
+            <h3>Install <code>@nx/nest</code></h3>
+            <pre>
+              <code class="language-shell font-size-70 code-only" data-trim>
+                $ npx nx add @nx/nest
+
+                ✔ Installing @nx/nest@20.6.0...
+
+                NX  Generating @nx/nest:init
+
+                UPDATE package.json
+
+                added 15 packages, removed 1 package, changed 4 packages, and audited 1557 packages in 2s
+
+                231 packages are looking for funding
+                  run `npm fund` for details
+
+                found 0 vulnerabilities
+                ✔ Initializing @nx/nest...
+
+                NX   Package @nx/nest added successfully.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-6">
+            <h3>Generate API</h3>
+            <pre>
+              <code class="language-shell font-size-70" data-trim>
+                $ npx nx g @nx/nest:app
+
+                NX  Generating @nx/nest:application
+
+                ✔ Which directory do you want to create the application in? · apps/api
+                ✔ Which linter would you like to use? · eslint
+                ✔ Which unit test runner would you like to use? · jest
+                UPDATE package.json
+                UPDATE nx.json
+                CREATE apps/api/src/assets/.gitkeep
+                CREATE apps/api/src/main.ts
+                CREATE apps/api/tsconfig.app.json
+                CREATE apps/api/tsconfig.json
+                CREATE apps/api/webpack.config.js
+                CREATE apps/api/project.json
+                CREATE apps/api/eslint.config.mjs
+                CREATE apps/api/tsconfig.spec.json
+                CREATE apps/api/jest.config.ts
+                CREATE apps/api-e2e/project.json
+                CREATE apps/api-e2e/jest.config.ts
+                CREATE apps/api-e2e/src/api/api.spec.ts
+                CREATE apps/api-e2e/src/support/global-setup.ts
+                CREATE apps/api-e2e/src/support/global-teardown.ts
+                CREATE apps/api-e2e/src/support/test-setup.ts
+                CREATE apps/api-e2e/tsconfig.json
+                CREATE apps/api-e2e/tsconfig.spec.json
+                CREATE apps/api-e2e/eslint.config.mjs
+                CREATE apps/api/src/app/app.controller.spec.ts
+                CREATE apps/api/src/app/app.controller.ts
+                CREATE apps/api/src/app/app.module.ts
+                CREATE apps/api/src/app/app.service.spec.ts
+                CREATE apps/api/src/app/app.service.ts
+
+                added 35 packages, changed 1 package, and audited 1592 packages in 3s
+
+                236 packages are looking for funding
+                  run `npm fund` for details
+
+                found 0 vulnerabilities
+
+                NX   👀 View Details of api-e2e
+
+                Run "nx show project api-e2e" to view details about this project.
+
+                NX   👀 View Details of api
+
+                Run "nx show project api" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-7">
+            <h3>Generate DTO Library</h3>
+            <pre>
+              <code class="language-shell font-size-70" data-trim>
+                $ npx nx g @nx/js:lib
+
+                NX  Generating @nx/js:library
+
+                ✔ Which directory do you want to create the library in? · libs/common/dtos
+                ✔ Which bundler would you like to use to build the library? · esbuild
+                ✔ Which linter would you like to use? · eslint
+                ✔ Which unit test runner would you like to use? · jest
+                CREATE libs/common/dtos/tsconfig.lib.json
+                CREATE libs/common/dtos/tsconfig.json
+                CREATE libs/common/dtos/src/index.ts
+                CREATE libs/common/dtos/src/lib/dtos.spec.ts
+                CREATE libs/common/dtos/src/lib/dtos.ts
+                CREATE libs/common/dtos/README.md
+                CREATE libs/common/dtos/package.json
+                UPDATE nx.json
+                CREATE libs/common/dtos/project.json
+                UPDATE package.json
+                CREATE libs/common/dtos/eslint.config.mjs
+                CREATE libs/common/dtos/tsconfig.spec.json
+                CREATE libs/common/dtos/jest.config.ts
+                UPDATE tsconfig.base.json
+
+                added 7 packages, changed 2 packages, and audited 1599 packages in 2s
+
+                236 packages are looking for funding
+                  run `npm fund` for details
+
+                1 moderate severity vulnerability
+
+                To address all issues (including breaking changes), run:
+                  npm audit fix --force
+
+                Run `npm audit` for details.
+
+                NX   👀 View Details of dtos
+
+                Run "nx show project dtos" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-8">
+            <h3>Generate Feature Home Library</h3>
+            <pre>
+              <code class="language-shell font-size-70" data-trim>
+                $ npx nx g @nx/angular:lib --name feature-home
+
+                NX  Generating @nx/angular:library
+
+                ✔ Which directory do you want to create the library in? · libs/web/home/feature
+                CREATE libs/web/home/feature/project.json
+                CREATE libs/web/home/feature/README.md
+                CREATE libs/web/home/feature/tsconfig.json
+                CREATE libs/web/home/feature/tsconfig.lib.json
+                CREATE libs/web/home/feature/src/index.ts
+                CREATE libs/web/home/feature/jest.config.ts
+                CREATE libs/web/home/feature/src/test-setup.ts
+                CREATE libs/web/home/feature/tsconfig.spec.json
+                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.css
+                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.html
+                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.spec.ts
+                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.ts
+                CREATE libs/web/home/feature/eslint.config.mjs
+                UPDATE tsconfig.base.json
+
+                NX   👀 View Details of feature-home
+
+                Run "nx show project feature-home" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-9">
+            <h3>Generate Data Acces Home Library</h3>
+            <pre>
+              <code class="language-shell font-size-65" data-trim>
+                $ npx nx g @nx/angular:lib --name data-access-home
+
+                NX  Generating @nx/angular:library
+
+                ✔ Which directory do you want to create the library in? · libs/web/home/data-access
+                CREATE libs/web/home/data-access/project.json
+                CREATE libs/web/home/data-access/README.md
+                CREATE libs/web/home/data-access/tsconfig.json
+                CREATE libs/web/home/data-access/tsconfig.lib.json
+                CREATE libs/web/home/data-access/src/index.ts
+                CREATE libs/web/home/data-access/jest.config.ts
+                CREATE libs/web/home/data-access/src/test-setup.ts
+                CREATE libs/web/home/data-access/tsconfig.spec.json
+                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.css
+                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.html
+                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.spec.ts
+                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.ts
+                CREATE libs/web/home/data-access/eslint.config.mjs
+                UPDATE tsconfig.base.json
+
+                NX   👀 View Details of data-access-home
+
+                Run "nx show project data-access-home" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-10">
+            <h3>Generate UI Home Library</h3>
+            <pre>
+              <code class="language-shell font-size-70" data-trim>
+                $ npx nx g @nx/angular:lib --name ui-home
+
+                NX  Generating @nx/angular:library
+
+                ✔ Which directory do you want to create the library in? · libs/web/home/ui
+                CREATE libs/web/home/ui/project.json
+                CREATE libs/web/home/ui/README.md
+                CREATE libs/web/home/ui/tsconfig.json
+                CREATE libs/web/home/ui/tsconfig.lib.json
+                CREATE libs/web/home/ui/src/index.ts
+                CREATE libs/web/home/ui/jest.config.ts
+                CREATE libs/web/home/ui/src/test-setup.ts
+                CREATE libs/web/home/ui/tsconfig.spec.json
+                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.css
+                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.html
+                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.spec.ts
+                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.ts
+                CREATE libs/web/home/ui/eslint.config.mjs
+                UPDATE tsconfig.base.json
+
+                NX   👀 View Details of ui-home
+
+                Run "nx show project ui-home" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-11">
+            <h3>Generate Util Home Library</h3>
+            <pre>
+              <code class="language-shell font-size-70" data-trim>
+                $ npx nx g @nx/angular:lib --name util-home
+
+                NX  Generating @nx/angular:library
+
+                ✔ Which directory do you want to create the library in? · libs/web/home/util
+                CREATE libs/web/home/util/project.json
+                CREATE libs/web/home/util/README.md
+                CREATE libs/web/home/util/tsconfig.json
+                CREATE libs/web/home/util/tsconfig.lib.json
+                CREATE libs/web/home/util/src/index.ts
+                CREATE libs/web/home/util/jest.config.ts
+                CREATE libs/web/home/util/src/test-setup.ts
+                CREATE libs/web/home/util/tsconfig.spec.json
+                CREATE libs/web/home/util/src/lib/util-home/util-home.component.css
+                CREATE libs/web/home/util/src/lib/util-home/util-home.component.html
+                CREATE libs/web/home/util/src/lib/util-home/util-home.component.spec.ts
+                CREATE libs/web/home/util/src/lib/util-home/util-home.component.ts
+                CREATE libs/web/home/util/eslint.config.mjs
+                UPDATE tsconfig.base.json
+
+                NX   👀 View Details of util-home
+
+                Run "nx show project util-home" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-12">
+            <h3>Generate Cat Facts SDK</h3>
+            <pre>
+              <code class="language-shell font-size-70" data-trim>
+                $ npx nx g @nx/nest:lib
+
+                NX  Generating @nx/nest:library
+
+                ✔ Which directory do you want to create the library in? · libs/api/cat-facts-sdk
+                ✔ Which linter would you like to use? · eslint
+                ✔ Which unit test runner would you like to use? · jest
+                CREATE libs/api/cat-facts-sdk/tsconfig.lib.json
+                CREATE libs/api/cat-facts-sdk/tsconfig.json
+                CREATE libs/api/cat-facts-sdk/src/index.ts
+                CREATE libs/api/cat-facts-sdk/README.md
+                CREATE libs/api/cat-facts-sdk/project.json
+                CREATE libs/api/cat-facts-sdk/eslint.config.mjs
+                CREATE libs/api/cat-facts-sdk/tsconfig.spec.json
+                CREATE libs/api/cat-facts-sdk/jest.config.ts
+                UPDATE tsconfig.base.json
+                CREATE libs/api/cat-facts-sdk/src/lib/cat-facts-sdk.module.ts
+
+                NX   👀 View Details of cat-facts-sdk
+
+                Run "nx show project cat-facts-sdk" to view details about this project.
+
+                NX   👀 View Details of cat-facts-sdk
+
+                Run "nx show project cat-facts-sdk" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-13">
+            <h3>Generate Cataas SDK</h3>
+            <pre>
+              <code class="language-shell font-size-70" data-trim>
+                $ npx nx g @nx/nest:lib
+
+                NX  Generating @nx/nest:library
+
+                ✔ Which directory do you want to create the library in? · libs/api/cataas-sdk
+                ✔ Which linter would you like to use? · eslint
+                ✔ Which unit test runner would you like to use? · jest
+                CREATE libs/api/cataas-sdk/tsconfig.lib.json
+                CREATE libs/api/cataas-sdk/tsconfig.json
+                CREATE libs/api/cataas-sdk/src/index.ts
+                CREATE libs/api/cataas-sdk/README.md
+                CREATE libs/api/cataas-sdk/project.json
+                CREATE libs/api/cataas-sdk/eslint.config.mjs
+                CREATE libs/api/cataas-sdk/tsconfig.spec.json
+                CREATE libs/api/cataas-sdk/jest.config.ts
+                UPDATE tsconfig.base.json
+                CREATE libs/api/cataas-sdk/src/lib/cataas-sdk.module.ts
+
+                NX   👀 View Details of cataas-sdk
+
+                Run "nx show project cataas-sdk" to view details about this project.
+
+                NX   👀 View Details of cataas-sdk
+
+                Run "nx show project cataas-sdk" to view details about this project.
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-14">
+            <img alt="updated screenshot of nx workspace" src="img/updated-nx-workspace.png" />
+            <aside class="notes">
+              <p>Alright, so here's the current view of our workspace after all that code generation!</p>
+              <p>We have 4 applications:</p>
+              <ul>
+                <li>api is our NestJS application</li>
+                <li>api-e2e is our jest-based API test suite</li>
+                <li>web is our Angular application</li>
+                <li>web-e2e is our Playwright-based E2E test suite</li>
+              </ul>
+              <p>We have 7 libraries:</p>
+              <ul>
+                <li>api/cat-facts-sdk is our SDK for integrating with the Cat Facts API</li>
+                <li>api/cataas-sdk is our SDK for integrating with the Cataas API</li>
+                <li>common/dtos is our common interfaces or Data Transfer Objects</li>
+                <li>web/home/data-access is our data-access library for the home feature</li>
+                <li>web/home/feature is our feature library for the home feature</li>
+                <li>web/home/ui is our ui library for the home feature</li>
+                <li>web/home/util is our util library for the home feature</li>
+              </ul>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-15">
+            <img alt="screenshot of demo tsconfig.base.json file" src="img/demo-tsconfig-base.png" />
+            <aside class="notes">
+              <p>
+                Here are those 7 libraries again listed in our tsconfig.base.json file. This shows you the import paths
+                you can use to import these libraries. Now, the next thing we want to do is update the workspace to
+                properly enforce our module boundaries and adhere to Nx best practices.
+              </p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-16">
+            <h4><code>eslint.config.mjs</code></h4>
+            <pre>
+              <code class="language-javascript font-size-70 code-only" data-trim>
+                depConstraints: [
+                  {
+                    sourceTag: 'scope:web',
+                    onlyDependOnLibsWithTags: ['scope:web', 'scope:common'],
+                  },
+                  {
+                    sourceTag: 'scope:api',
+                    onlyDependOnLibsWithTags: ['scope:api', 'scope:common'],
+                  },
+                  {
+                    sourceTag: 'scope:common',
+                    onlyDependOnLibsWithTags: ['scope:common'],
+                  },
+                  {
+                    sourceTag: 'type:feature',
+                    onlyDependOnLibsWithTags: ['type:feature', 'type:ui', 'type:util'],
+                  },
+                  {
+                    sourceTag: 'type:data-access',
+                    onlyDependOnLibsWithTags: ['type:data-access', 'type:util'],
+                  },
+                  {
+                    sourceTag: 'type:ui',
+                    onlyDependOnLibsWithTags: ['type:ui', 'type:util'],
+                  },
+                  {
+                    sourceTag: 'type:util',
+                    onlyDependOnLibsWithTags: ['type:util'],
+                  },
+                ],
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-17">
+            <pre>
+              <code class="language-shell font-size-70 code-only" data-trim>
+                $ npx nx run-many -t lint test build
+
+                ✔  nx run api:lint (660ms)
+                ✔  nx run web:lint (943ms)
+                ✔  nx run web:build:production (2s)
+                ✔  nx run api:build (2s)
+                ✔  nx run api-e2e:lint (634ms)
+                ✔  nx run web:test (2s)
+                ✔  nx run ui-home:lint (845ms)
+                ✔  nx run dtos:test (1s)
+                ✔  nx run cataas-sdk:test (691ms)
+                ✔  nx run cat-facts-sdk:test (668ms)
+                ✔  nx run util-home:test (2s)
+                ✔  nx run feature-home:test (2s)
+                ✔  nx run data-access-home:lint (820ms)
+                ✔  nx run cat-facts-sdk:lint (583ms)
+                ✔  nx run data-access-home:test (2s)
+                ✔  nx run feature-home:lint (811ms)
+                ✔  nx run cataas-sdk:lint (564ms)
+                ✔  nx run dtos:lint (617ms)
+                ✔  nx run dtos:build (683ms)
+                ✔  nx run util-home:lint (832ms)
+                ✔  nx run web-e2e:lint (584ms)
+                ✔  nx run ui-home:test (2s)
+
+                —————————————————————————————————————————————————————————————————————————————————————————————
+
+                NX   Successfully ran targets lint, test, build for 11 projects (10s)
+              </code>
+            </pre>
           </section>
         </section>
       </div>
