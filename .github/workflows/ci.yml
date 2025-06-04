@@ -24,10 +24,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'
+          cache: "npm"
 
       - run: npm ci
-      - uses: nrwl/nx-set-shas@v4
 
       - run: npm run build
 
@@ -40,25 +39,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'npm'
-          
+          cache: "npm"
+
       - run: npm ci
-      
+
       - name: Build for GitHub Pages
         run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
