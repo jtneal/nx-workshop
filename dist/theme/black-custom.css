@@ -796,31 +796,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-size: 0.9em;
 }
 
-#caching-9 pre code {
-  height: 275px;
-}
-
-#common-tasks-4 pre code,
-#common-tasks-5 pre code,
-#common-tasks-6 pre code,
-#common-tasks-7 pre code,
-#common-tasks-8 pre code {
-  height: 150px;
-}
-
-#folders-9 pre code {
-  height: 200px;
-}
-
 #tasks-2 pre code {
   height: 390px;
 }
 
-#explore-13 iframe {
+#explore-5 iframe {
   height: 650px;
   width: 100%;
-}
-
-#libraries-12 pre code {
-  max-height: 600px;
 }
