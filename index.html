@@ -125,88 +125,49 @@
           </aside>
         </section>
 
-        <section id="intro">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-1">
-            <h2>Intro to Nx</h2>
-            <p>
-              Nx is a powerful open-source build system that provides tools and techniques for enhancing developer
-              productivity, optimizing CI performance, and maintaining code quality.
-            </p>
+        <section id="what-is-nx">
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="what-is-nx-1">
+            <h2>What is Nx?</h2>
+            <p class="fragment">A lot of things...</p>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-2">
-            <h2>Core Features</h2>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="what-is-nx-2">
+            <h2>Nx History</h2>
+            <img alt="screenshot of nx websites over the years 2019-2025" src="img/nx-history.png" />
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-3">
-            <h3>Run Tasks Efficiently</h3>
-            <p>Nx runs tasks in parallel and orders the tasks based on the dependencies between them.</p>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="what-is-nx-3">
+            <h2>The many facets of Nx</h2>
+            <div class="flex gap-24">
+              <ul class="fragment-list smaller">
+                <li class="fragment"><strong>Nx CLI</strong> - CLI tool for interacting with Nx</li>
+                <li class="fragment"><strong>Nx Console</strong> - UI tool for interacting with Nx</li>
+                <li class="fragment"><strong>Nx Workspaces</strong> - a repo that uses Nx</li>
+                <li class="fragment"><strong>Nx Plugins</strong> - community extensions</li>
+                <li class="fragment"><strong>Nx Devkit</strong> - Utilities for building plugins</li>
+                <li class="fragment"><strong>Nx Cache</strong> - Local Caching</li>
+                <li class="fragment"><strong>Nx Replay</strong> - Remote Caching</li>
+              </ul>
+              <ul class="fragment-list smaller">
+                <li class="fragment"><strong>Nx Cloud</strong> - Enhance CI/CD workflows</li>
+                <li class="fragment"><strong>Nx Agents</strong> - Distributed Task Execution</li>
+                <li class="fragment"><strong>Nx Atomizer</strong> - Automatically Split E2E Tasks</li>
+                <li class="fragment"><strong>Nx Release</strong> - Release Management</li>
+                <li class="fragment"><strong>Nx Affected</strong> - Run tasks on affected projects</li>
+                <li class="fragment"><strong>Nx Enterprise</strong> - faster CI, enterprise features</li>
+                <li class="fragment"><strong>Nx Powerpack</strong> - suite of paid extensions</li>
+              </ul>
+            </div>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-4">
-            <h3>Distribute Tasks in CI</h3>
-            <p>
-              Nx scales your CI by distributing tasks across many VMs. Your CI is fast no matter how big your repository
-              is.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-5">
-            <h3>Cache Locally &amp; Remotely</h3>
-            <p>
-              With local and remote caching, Nx prevents unnecessary re-runs of tasks, saving you valuable dev time.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-6">
-            <h3>Split E2E Tests and Rerun Flaky Tests</h3>
-            <p>
-              Nx automatically splits large e2e tests to distribute them across VMs. Nx can also automatically identify
-              and rerun flaky e2e tests.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-7">
-            <h3>Automate Dependency Updates</h3>
-            <p>
-              If you leverage Nx plugins you gain additional features such as code generation and tools to automatically
-              upgrade your codebase and dependencies.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="intro-8">
-            <h3>Make it Your Own</h3>
-            <p>
-              Nx is highly customizable and extensible. Fine-tune it by creating a plugin for your organization or
-              creating a tooling plugin.
-            </p>
-          </section>
-        </section>
-
-        <section id="why">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="why-1">
-            <h2>Why Nx?</h2>
-            <p>
-              Developers struggle to configure, maintain and especially integrate various tools and frameworks. Setting
-              up a system that works well for a handful of developers and at the same time, easily scales up to an
-              entire organization is hard. Nx provides a solution that is easy to adopt and scale.
-            </p>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="what-is-nx-4">
+            <img alt="screenshot of Nx architecture" class="shaded width-90" src="img/nx-architecture.svg" />
             <aside class="notes">
-              <p>Why Nx?</p>
               <p>
-                Developers struggle to configure, maintain and especially integrate various tools and frameworks.
-                Setting up a system that works well for a handful of developers and at the same time, easily scales up
-                to an entire organization is hard.
+                This is a high-level overview of the Nx architecutre. It shows how the different pieces of Nx are
+                composed together. Okay, so that's what Nx is, but how does it really help you?
               </p>
-              <p>
-                This includes setting up low-level build tooling, configuring fast CI, and keeping your codebase
-                healthy, up-to-date, and maintainable.
-              </p>
-              <p>Nx provides a solution that is easy to adopt and scale.</p>
             </aside>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="why-2">
-            <h3>How Does Nx Help You?</h3>
-            <p>
-              In a nutshell, Nx helps to: <strong>speed up your computation</strong> (e.g. builds, tests etc) locally
-              and on CI and to <strong>integrate and automate your tooling</strong> via its plugins.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="why-3">
-            <h3>You can use Nx to</h3>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="what-is-nx-5">
+            <h2>How Does Nx Help You?</h2>
             <ul class="fragment-list">
               <li class="fragment">
                 speed up your existing project's builds and tests, locally and on CI (whether that's a monorepo or
@@ -224,89 +185,26 @@
               </li>
             </ul>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="why-4">
-            <h3>How Does Nx Work?</h3>
-            <p>Nx is built in a modular fashion to let you only use the features you need.</p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="why-5">
-            <img alt="screenshot of Nx architecture" class="shaded width-90" src="img/nx-architecture.svg" />
-            <aside class="notes">
-              <p>
-                <strong>Nx Console</strong> is an extension for VSCode, IntelliJ and VIM. It provides code
-                autocompletion, interactive generators, workspace visualizations, powerful refactorings and more.
-              </p>
-              <p>
-                <strong>Nx Cloud</strong> is a service provided by the creators of Nx that enables remote caching,
-                dynamically allocating machines to distribute tasks, providing fine-grained e2e test splitting,
-                automated flakiness detection, and more.
-              </p>
-              <p>
-                <strong>Plugins</strong> are NPM packages that build on top of the fundamental capabilities provided by
-                the Nx package. Nx plugins contain code generators, executors (to abstract lower-level build tooling)
-                and automated code migrations for keeping your tools up to date. Contrary to the Nx package, which works
-                the same way with any JS or non-JS project, plugins are usually technology specific. For instance,
-                @nx/react adds support for building React apps and libs, @nx/cypress adds e2e testing capabilities with
-                Cypress. Plugins make developers more productive by removing any friction of integrating different tools
-                with each other and by providing utilities to keep them up to date. The Nx team maintains plugins for
-                React, Next, Remix, Angular, Jest, Cypress, Storybook and more. You can use the @nx/plugin package to
-                easily scaffold a new plugin or even just automate your local workspace. There are also more than 80
-                community plugins.
-              </p>
-              <p><strong>Devkit</strong> is a set of utilities for building Nx plugins.</p>
-              <p>
-                <strong>The Nx package</strong> provides fundamental technology-agnostic capabilities such as: workspace
-                analysis, task running, caching, distribution, code generation and automated code migrations.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="why-6">
-            <h3>How Can Nx Improve Your CI Pipeline?</h3>
-            <ul class="fragment-list">
-              <li class="fragment">Run only tasks affected by that PR</li>
-              <li class="fragment">Share the task cache between CI and local development machines (Nx Replay)</li>
-              <li class="fragment">Distribute task execution across multiple agent machines (Nx Agents)</li>
-              <li class="fragment">Automatically split long e2e tasks into smaller tasks (Atomizer)</li>
-              <li class="fragment">Identify and Re-run Flaky Tasks</li>
-            </ul>
-            <aside class="notes">
-              <p>How Can Nx Improve Your CI Pipeline?</p>
-              <p>
-                The benefits of Nx are not restricted to local development. Nx Cloud helps scale your project on CI by
-                making it simple to create and maintain a pipeline that eliminates wasted time and efficiently
-                parallelizes work. Your CI pipeline with Nx can:
-              </p>
-              <p><strong>Run</strong> only tasks affected by that PR</p>
-              <p><strong>Share</strong> the task cache between CI and local development machines (Nx Replay)</p>
-              <p><strong>Distribute</strong> task execution across multiple agent machines (Nx Agents)</p>
-              <p><strong>Automatically</strong> split long e2e tasks into smaller tasks (Atomizer)</p>
-              <p><strong>Identify</strong> and Re-run Flaky Tasks</p>
-            </aside>
-          </section>
         </section>
 
         <section id="tasks">
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-1">
             <h2>Run Tasks</h2>
-            <p>
-              In a monorepo setup, you don't just run tasks for a single project; you might have hundreds to manage. To
-              help with this, Nx provides a powerful task runner that allows you to:
-            </p>
             <ul class="fragment-list">
               <li class="fragment">easily <strong>run multiple targets</strong> for multiple projects in parallel</li>
               <li class="fragment">define <strong>task pipelines</strong> to run tasks in the correct order</li>
               <li class="fragment">only run tasks for <strong>projects affected by a given change</strong></li>
               <li class="fragment"><strong>speed up task execution</strong> with caching</li>
             </ul>
+            <aside class="notes">
+              <p>
+                In a monorepo setup, you don't just run tasks for a single project; you might have hundreds to manage.
+                To help with this, Nx provides a powerful task runner that allows you to:
+              </p>
+            </aside>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-2">
             <h3>Defining Tasks</h3>
-            <p>
-              Nx tasks can be created from existing <code>package.json</code> scripts, inferred from tooling
-              configuration files, or defined in a <code>project.json</code> file. Nx combines these three sources to
-              determine the tasks for a particular project.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-3">
             <div class="code-columns">
               <div class="width-30">
                 <h5>package.json</h5>
@@ -379,17 +277,19 @@
                 </pre>
               </div>
             </div>
-            <p class="r-fit-text">
-              The
-              <a href="https://nx.dev/reference/project-configuration" target="_blank">project configuration docs</a>
-              has the details for all the available configuration options.
-            </p>
+            <aside class="notes">
+              <p>
+                Nx tasks can be created from existing package.json scripts, defined in a project.json file, or inferred
+                from tooling configuration files. Nx combines these three sources to determine the tasks for a
+                particular project.
+              </p>
+            </aside>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-4">
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-3">
             <p>Nx uses the following syntax:</p>
             <img alt="screenshot of the nx.dev website" class="shaded margin-top-1-0" src="img/run-target-syntax.svg" />
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-5">
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-4">
             <h3>Run a Single Task</h3>
             <p class="r-fit-text">
               To run the <strong>test</strong> task for the <strong>header</strong> project run this command:
@@ -400,7 +300,7 @@
               </code>
             </pre>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-6">
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-5">
             <h3>Run Tasks for Multiple Projects</h3>
             <p class="r-fit-text">
               You can use the <strong>run-many</strong> command to run a task for multiple projects.
@@ -425,7 +325,7 @@
               </p>
             </aside>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-7">
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-6">
             <h3>Run Tasks on Projects Affected by a PR</h3>
             <p class="r-fit-text">You can also run a command for all the projects affected by your PR like this:</p>
             <pre class="margin-top-2-5">
@@ -434,152 +334,34 @@
               </code>
             </pre>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-8">
-            <h3>Defining a Task Pipeline</h3>
-            <p>
-              It is pretty common to have dependencies between tasks, requiring one task to be run before another. For
-              example, you might want to run the <code>build</code> target on the <code>header</code> project before
-              running the <code>build</code> target on the <code>app</code> project.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-9">
-            <p class="r-fit-text">Nx can automatically detect the dependencies between projects.</p>
-            <img alt="screenshot of Nx project graph" class="margin-top-1-0" src="img/project-graph.png" />
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-10">
-            <p class="font-size-90">
-              In the following example we tell Nx that before running the <code>build</code> target it needs to run the
-              <code>build</code> target on all the projects the current project depends on:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-75" data-trim>
-                {
-                  ...
-                  "targetDefaults": {
-                    "build": {
-                      "dependsOn": ["^build"]
-                    }
-                  }
-                }
-              </code>
-            </pre>
-            <p class="font-size-65 margin-top-2-5">
-              This means that if we run <code>nx build myreactapp</code>, Nx will first execute <code>build</code> on
-              <code>shared-ui</code> and <code>feat-products</code> before running <code>build</code> on
-              <code>myreactapp</code>.
-            </p>
-            <aside class="notes">
-              <p>
-                However, you need to specify for which targets this ordering is important. In this example we are
-                telling Nx that before running the build target it needs to run the build target on all the projects the
-                current project depends on:
-              </p>
-              <p>
-                This means that if we run nx build myreactapp, Nx will first execute build on modules-shared-ui and
-                modules-products before running build on myreactapp.
-              </p>
-              <p>
-                You can define these task dependencies globally for your workspace in nx.json or individually in each
-                project's project.json file.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-11">
-            <h3>Run Root-Level Tasks</h3>
-            <p>
-              Sometimes, you need tasks that apply to the entire codebase rather than a single project. To still benefit
-              from caching, you can run these tasks through the "Nx pipeline". Define them in the root-level
-              <code>project.json</code> as follows:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-70" data-trim>
-                {
-                  "name": "myorg",
-                  ...
-                  "targets": {
-                    "docs": {
-                      "command": "node ./generateDocsSite.js"
-                    }
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="tasks-12">
-            <p>To invoke the task, use:</p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx docs
-              </code>
-            </pre>
-          </section>
         </section>
 
         <section id="explore">
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-1">
             <h2>Explore your Workspace</h2>
-            <p>
-              Nx understands your workspace as a collection of projects. Each project can be explored to view the
-              different tasks which can be run.
-            </p>
+            <p class="r-fit-text">Nx understands your workspace as a collection of projects.</p>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-2">
             <p>
               The projects in the workspace have dependencies between them and form a graph known as the
-              <strong>Project Graph</strong>. Nx uses this project graph in many ways to make informed decisions such as
-              which tasks to run, when the results of a task can be restored from cache, and more.
+              <strong>Project Graph</strong>.
             </p>
+            <aside class="notes">
+              <p>
+                Nx uses this project graph in many ways to make informed decisions such as which tasks to run, when the
+                results of a task can be restored from cache, and more.
+              </p>
+            </aside>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-3">
+            <h3>Explore the Project Graph</h3>
             <p>
-              In addition to the project graph, Nx also runs your tasks as a <strong>Task Graph</strong>. This is a
-              separate graph of tasks and their dependencies which is based on the project graph and determines the way
-              in which the tasks are executed.
+              Exploring this graph visually is vital to understanding how your code is structured and how Nx behaves. It
+              always stays up to date without having to actively maintain a document as it is calculated by analyzing
+              your source code.
             </p>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-4">
-            <p>
-              Nx allows you to interactively explore your workspace through a UI which shows the information above.
-              Using this tool is vital to understanding both your workspace as well as how Nx behaves.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-5">
-            <h3>Explore Projects in your Workspace</h3>
-            <p>Projects in Nx are the different parts of the monorepo which can have tasks run for them.</p>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                The best way to see what projects are in your workspace is to view the project graph which will be
-                covered in the next section. Another way is to look at the Projects pane in Nx Console or run nx show
-                projects to show a list of projects in your terminal.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-6">
-            <p>
-              You can see more details about a specific project in Nx Console or by running
-              <code>nx show project &lt;project-name&gt; --web</code>.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-7">
-            <img alt="screenshot of nx show project" src="img/nx-show-project.png" />
-            <aside class="notes">
-              <p>
-                The view shows a list of targets which can be run by Nx. Each target has different options which
-                determine how Nx runs the task.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-8">
-            <h3>Explore the Project Graph</h3>
-            <p>
-              Nx understands the projects in your workspace as a graph and uses this understanding to behave
-              intelligently. Exploring this graph visually is vital to understanding how your code is structured and how
-              Nx behaves. It always stays up to date without having to actively maintain a document as it is calculated
-              by analyzing your source code.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-9">
             <h3>Launching the Project Graph</h3>
             <p>To launch the project graph visualization for your workspace, use Nx Console or run:</p>
             <pre class="margin-top-2-5">
@@ -592,1940 +374,28 @@
               <p>This will open a browser window with an interactive view of the project graph of your workspace.</p>
             </aside>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-10">
-            <h3>Focusing on Valuable Projects</h3>
-            <ol class="fragment-list">
-              <li class="fragment">
-                <span>
-                  Focus on a specific project and then use the proximity and group by folder controls in the sidebar to
-                  modify the graph around that project. You can also start the graph with a project focused by running
-                  <code>nx graph --focus &lt;project-name&gt;</code>.
-                </span>
-              </li>
-              <li class="fragment">
-                <span>Use the search bar to find all projects with names that contain a certain string.</span>
-              </li>
-              <li class="fragment"><span>Manually hide or show projects in the sidebar.</span></li>
-            </ol>
-            <aside class="notes">
-              <p>Focusing on Valuable Projects</p>
-              <p>
-                Viewing the entire graph can be unmanageable even for smaller repositories, so there are several ways to
-                narrow the focus of the visualization down to the most useful part of the graph at the moment.
-              </p>
-              <p>
-                <strong>Focus</strong> on a specific project and then use the proximity and group by folder controls in
-                the sidebar to modify the graph around that project. You can also start the graph with a project focused
-                by running nx graph --focus &lt;project-name&gt;.
-              </p>
-              <p><strong>Use</strong> the search bar to find all projects with names that contain a certain string.</p>
-              <p><strong>Manually</strong> hide or show projects in the sidebar.</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-11">
-            <p>
-              Once the graph is displayed, you can explore deeper by clicking on nodes and edges in the graph. Click on
-              a node to show a tooltip which also has a link to view more details about the project. You can trace the
-              dependency chain between two projects by choosing a <strong>Start</strong> and <strong>End</strong> point
-              in the project tooltips. Click on any dependency line to find which file(s) created the dependency.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-12">
-            <p>
-              Composite nodes represent a set of projects in the same folder and can be expanded in place to show all
-              the individual projects and their dependencies. You can also "focus" a composite node to render a graph of
-              just the projects inside that node. Composite nodes are essential to navigate a graph of even a moderate
-              size.
-            </p>
-          </section>
-          <section id="explore-13">
+          <section id="explore-5">
             <iframe src="https://nrwl-nx-examples-dep-graph.netlify.app/?focus=cart#/projects/all"></iframe>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-14">
-            <h3>Export Project Graph to JSON</h3>
-            <p>
-              If you prefer to analyze the underlying data of the project graph with a script or some other tool, you
-              can run:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx graph --file=output.json
-              </code>
-            </pre>
-            <p class="r-fit-text margin-top-2-5">
-              This will give you all the information that is used to create the project graph visualization.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-15">
-            <h3>Export the Project Graph as an Image</h3>
-            <p class="font-size-85">
-              There is a floating action button in the bottom right of the project graph view which will save the graph
-              as a <code>.png</code> file. Sharing this image with other developers is a great way to express how a
-              project fits into the workspace. Some moments which you may want to share these images are:
-            </p>
-            <ul class="fragment-list">
-              <li class="fragment">When providing a high-level overview of the workspace</li>
-              <li class="fragment">When introducing new project(s) into the workspace</li>
-              <li class="fragment">When changing how project(s) are related</li>
-              <li class="fragment">To share which other projects are directly affected by changes you are making</li>
-            </ul>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-16">
-            <h3>Explore the Task Graph</h3>
-            <p>
-              Nx uses the project graph of your workspace to determine the order in which to run tasks. Pass the
-              <code>--graph</code> flag to view the <strong>task graph</strong> which is executed by Nx when running a
-              command.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx build myreactapp --graph # View the graph for building myreactapp
-                $ npx nx run-many --targets build --graph # View the graph for building all projects
-                $ npx nx affected --targets build --graph # View the graph for building the affected projects
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="explore-17">
-            <p>Click on the nodes of this graph to see more information about the task such as:</p>
-            <ul class="fragment-list">
-              <li class="fragment">Which executor was used to run the command</li>
-              <li class="fragment">Which inputs are used to calculate the computation hash.</li>
-              <li class="fragment">A link to see more details about the project which the task belongs to</li>
-            </ul>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                Dependencies in this graph mean that Nx will need to wait for all task dependencies to complete
-                successfully before running the task.
-              </p>
-            </aside>
-          </section>
-        </section>
-
-        <section id="generate">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="generate-1">
-            <h2>Generate Code</h2>
-            <p>
-              Code generators are like automation scripts designed to streamline your workflow. Essentially, they are
-              TypeScript functions that accept parameters and help boost your productivity by:
-            </p>
-            <ul class="fragment-list">
-              <li class="fragment">
-                Allowing you to <strong>scaffold new projects</strong> or
-                <strong>augment existing projects</strong> with new features, like adding Storybook support
-              </li>
-              <li class="fragment"><strong>Automating repetitive tasks</strong> in your development workflow</li>
-              <li class="fragment">Ensuring your <strong>code is consistent and follows best practices</strong></li>
-            </ul>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="generate-2">
-            <h3>Invoke Generators</h3>
-            <p>
-              Generators come as part of Nx plugins and can be invoked using the <code>nx generate</code> command (or
-              <code>nx g</code>) using the following syntax:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell font-size-100" data-trim>
-                $ npx nx g &lt;plugin-name&gt;:&lt;generator-name&gt; [options]
-
-                $ # Here's an example of generating a React library:
-                $ npx nx g @nx/react:lib packages/mylib
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="generate-3">
-            <p>
-              You can also specify just the generator name and Nx will prompt you to pick between the installed plugins
-              that provide a generator with that name.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g lib packages/mylib
-              </code>
-            </pre>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                When running this command, you could be prompted to choose between the @nx/react and @nx/js plugins that
-                each provide a library generator.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="generate-4">
-            <p>
-              To see a list of available generators in a given plugin, run <code>nx list &lt;plugin-name&gt;</code>.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx list @nx/react
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="generate-5">
-            <h3>Use Nx Console</h3>
-            <ul class="fragment-list">
-              <li class="fragment">
-                an IDE extension that can be
-                <a href="https://nx.dev/getting-started/editor-setup" target="_blank">installed here</a>.
-              </li>
-              <li class="fragment">The UI for Nx Workspaces</li>
-              <li class="fragment">Useful for Both Experts and Beginners</li>
-            </ul>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                The Nx Console does not have a specific UI for, say, generating a component. Instead, Nx Console does
-                what the command-line version of Nx does - it analyzes the same meta information to create the needed
-                UI. This means that anything you can do with Nx, you can do with Nx Console.
-              </p>
-            </aside>
-          </section>
-          <section id="generate-6">
-            <img alt="screenshot of Nx Console" class="width-80" src="img/nx-console-ui-dark.png" />
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="generate-7">
-            <h3>Build Your Own Generator</h3>
-            <p class="font-size-90">
-              You can also customize existing generators by overwriting their behavior or create completely new ones.
-              This is a powerful mechanism as it allows you to:
-            </p>
-            <ul class="fragment-list">
-              <li class="fragment"><strong>automate</strong> your organization's specific processes and workflows</li>
-              <li class="fragment">
-                <strong>standardize</strong> how and where projects are created in your workspace to make sure they
-                reflect your organization's best practices and coding standards
-              </li>
-              <li class="fragment">
-                <strong>ensure</strong> that your codebase follows your organization's best practices and style guides
-              </li>
-            </ul>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="generate-8">
-            <p>
-              At their core, generators are just functions with a specific signature and input options that get invoked
-              by Nx. Something like the following:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-typescript font-size-90" data-trim>
-                import { Tree, formatFiles, installPackagesTask } from '@nx/devkit';
-
-                export default async function (tree: Tree, schema: any) {
-                  // Your implementation here
-                  // ...
-
-                  await formatFiles(tree);
-                  return () => {
-                    installPackagesTask(tree);
-                  };
-                }
-              </code>
-            </pre>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                To help build generators, Nx provides the <code>@nx/devkit</code> package containing utilities and
-                helpers.
-              </p>
-            </aside>
-          </section>
-        </section>
-
-        <section id="boundaries">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-1">
-            <h2>Enforce Module Boundaries</h2>
-            <p>
-              If you partition your code into well-defined cohesive units, even a small organization will end up with a
-              dozen apps and dozens or hundreds of libs. If all of them can depend on each other freely, chaos will
-              ensue, and the workspace will become unmanageable.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-2-new">
-            <p>
-              To help with that Nx uses code analysis to make sure projects can only depend on each other's well-defined
-              public API. It also allows you to declaratively impose constraints on how projects can depend on each
-              other.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-2">
-            <h3>Project APIs</h3>
-            <p class="font-size-95">
-              Nx provides an <code>enforce-module-boundaries</code> eslint rule that enforces the public API of projects
-              in the repo. Each project defines its public API in an <code>index.ts</code> (or <code>index.js</code>)
-              file. If another project tries to import a variable from a file deep within a different project, an error
-              will be thrown during linting.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-4-new">
-            <p>You configure these rules in your root <code>.eslintrc.json</code> file:</p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-100" data-trim>
-                {
-                  "plugins": ["@nx"],
-                  // ...
-                  "rules": {
-                    "@nx/enforce-module-boundaries": [
-                      "error",
-                      {
-                        /* options */
-                      }
-                    ]
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-3">
-            <h3>Tags</h3>
-            <p class="font-size-95">
-              Nx comes with a generic mechanism for expressing constraints on project dependencies: tags.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-5-new">
-            <p>
-              First, use your project configuration (in <code>project.json</code> or <code>package.json</code>) to
-              annotate your projects with <code>tags</code>. In this example, we will use three tags:
-              <code>scope:client</code>, <code>scope:admin</code>, <code>scope:shared</code>.
-            </p>
-            <div class="code-columns margin-top-1-5">
-              <div class="width-30">
-                <h5><code>client/project.json</code></h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      // ... more project configuration here
-                      "tags": ["scope:client"]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5><code>admin/project.json</code></h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      // ... more project configuration here
-                      "tags": ["scope:admin"]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5><code>utils/project.json</code></h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      // ... more project configuration here
-                      "tags": ["scope:shared"]
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-4">
-            <p class="r-fit-text">Next, you should update your root lint configuration:</p>
-            <ul class="font-size-60 max-width-80 margin-top-1-0">
-              <li>
-                If you are using <strong>ESLint</strong> you should look for an existing rule entry in your root
-                <code>.eslintrc.json</code> called <code>@nx/enforce-module-boundaries</code> and you should update the
-                <code>depConstraints</code>:
-              </li>
-            </ul>
-            <pre class="margin-top-1-5">
-              <code class="language-json font-size-45" data-trim>
-                {
-                  // ... more ESLint config here
-
-                  // @nx/enforce-module-boundaries should already exist within an "overrides" block using `"files": ["*.ts", "*.tsx", "*.js", "*.jsx",]`
-                  "@nx/enforce-module-boundaries": [
-                    "error",
-                    {
-                      "allow": [],
-                      // update depConstraints based on your tags
-                      "depConstraints": [
-                        {
-                          "sourceTag": "scope:shared",
-                          "onlyDependOnLibsWithTags": ["scope:shared"]
-                        },
-                        {
-                          "sourceTag": "scope:admin",
-                          "onlyDependOnLibsWithTags": ["scope:shared", "scope:admin"]
-                        },
-                        {
-                          "sourceTag": "scope:client",
-                          "onlyDependOnLibsWithTags": ["scope:shared", "scope:client"]
-                        }
-                      ]
-                    }
-                  ]
-
-                  // ... more ESLint config here
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-5">
-            <p>
-              With these constraints in place, <code>scope:client</code> projects can only depend on projects with
-              <code>scope:client</code> or <code>scope:shared</code>. And <code>scope:admin</code> projects can only
-              depend on projects with <code>scope:admin</code> or <code>scope:shared</code>. So
-              <code>scope:client</code> and <code>scope:admin</code> cannot depend on each other.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-6-new">
-            <p>
-              Projects without any tags cannot depend on any other projects. If you try to violate the constraints, you
-              will get an error when linting:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell font-size-100" data-trim>
-                A project tagged with "scope:admin" can only depend on projects
-                tagged with "scoped:shared" or "scope:admin".
-              </code>
-            </pre>
-            <p class="margin-top-1-0 r-fit-text">The exception to this rule is by explicitly allowing all tags.</p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-6">
-            <h3>Tag formats</h3>
-            <ul class="font-size-65 max-width-80">
-              <li><code>*</code>: allow all tags</li>
-            </ul>
-            <p class="margin-top-1-0">
-              Example: projects with any tags (including untagged) can depend on any other project.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json" data-trim>
-                {
-                  "sourceTag": "*",
-                  "onlyDependOnLibsWithTags": ["*"]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-7">
-            <h3>Tag formats</h3>
-            <ul class="font-size-65 max-width-80">
-              <li><code>string</code>: allow exact tags</li>
-            </ul>
-            <p class="margin-top-1-0">
-              Example: projects tagged with <code>scope:client</code> can only depend on projects tagged with
-              <code>scope:util</code>.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json" data-trim>
-                {
-                  "sourceTag": "scope:client",
-                  "onlyDependOnLibsWithTags": ["scope:util"]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-8">
-            <h3>Tag formats</h3>
-            <ul class="font-size-65 max-width-80">
-              <li><code>regex</code>: allow tags matching the regular expression</li>
-            </ul>
-            <p class="font-size-95">
-              Example: projects tagged <code>scope:client</code> can depend on projects with a tag matching the regular
-              expression <code>/^scope.*/</code>. In this case, the <code>scope:util</code>, <code>scope:client</code>,
-              etc. are all allowed tags.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-100" data-trim>
-                {
-                  "sourceTag": "scope:client",
-                  "onlyDependOnLibsWithTags": ["/^scope.*/"]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="boundaries-9">
-            <h3>Tag formats</h3>
-            <ul class="font-size-65 max-width-80">
-              <li><code>glob</code>: allow tags matching the glob</li>
-            </ul>
-            <p class="margin-top-1-0">
-              Example: projects with a tag starting with <code>scope:</code> can depend on projects with a tag that
-              starts with <code>scope:*</code>. In this case <code>scope:a</code>, <code>scope:b</code>, etc are all
-              allowed tags for dependencies.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-100" data-trim>
-                {
-                  "sourceTag": "scope:*",
-                  "onlyDependOnLibsWithTags": ["scope:*"]
-                }
-              </code>
-            </pre>
-          </section>
-        </section>
-
-        <section id="releases">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-1">
-            <h2>Manage Releases - <code>nx release</code></h2>
-            <p>Nx provides a set of tools to help you manage your releases called nx release.</p>
-            <blockquote class="font-size-90 margin-top-2-0 quotation">
-              Always starting with <code>--dry-run</code>, because publishing is difficult to undo
-            </blockquote>
-            <pre class="margin-top-3-0">
-              <code class="language-shell" data-trim>
-                $ npx nx release --dry-run
-              </code>
-            </pre>
-            <aside class="notes">
-              <p>Manage Releases - nx release</p>
-              <p>
-                Once you have leveraged Nx's powerful code generation and task running capabilities to build your
-                libraries and applications, you will want to share them with your users.
-              </p>
-              <p>Nx provides a set of tools to help you manage your releases called nx release.</p>
-              <p>
-                A good recommendation here to always starting with --dry-run, because publishing is difficult to undo.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-2">
-            <h3>What makes up a release?</h3>
-            <ol class="fragment-list">
-              <li class="fragment">
-                <span>
-                  <strong>Versioning</strong> - The process of determining the next version of your projects, and
-                  updating any projects that depend on them to use the new version.
-                </span>
-              </li>
-              <li class="fragment">
-                <span>
-                  <strong>Changelog</strong> - The process of deriving a changelog from your commit messages or version
-                  plan files, which can be used to communicate the changes to your users.
-                </span>
-              </li>
-              <li class="fragment">
-                <span>
-                  <strong>Publishing</strong> - The process of determining the next version of your projects, and
-                  updating any projects that depend on them to use the new version.
-                </span>
-              </li>
-            </ol>
-            <aside class="notes">
-              <p><em>Slide Start</em></p>
-              <p>What makes up a release?</p>
-              <p>A release can be thought about in three main phases:</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-3">
-            <h3>Running releases</h3>
-            <p>
-              The <code>nx release</code> command is used to run the release process from end to end. It is a wrapper
-              around the three main phases of a release to provide maximum convenience and ease of use.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-3-2">
-            <p>
-              By default if you just run <code>nx release</code> it will prompt you for a semver-compatible version
-              number, or semver keyword (such as major, minor, patch, etc.) and then run the three phases of the release
-              process, including publishing.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-3-3">
-            <p>
-              As with most Nx commands, when trying it out for the first time, it is strongly recommended to use the
-              <code>--dry-run</code> flag to see what changes will be made before actually making them.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx release --dry-run
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-4">
-            <h3>Customizing releases</h3>
-            <p>
-              The <code>nx release</code> command is highly customizable. You can customize the versioning, changelog,
-              and publishing phases of the release process independently through a mixture of configuration and CLI
-              arguments.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-4-5">
-            <p>The configuration lives in your <code>nx.json</code> file under the <code>release</code> section.</p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-100" data-trim>
-                {
-                  // ... more nx.json config
-                  "release": {
-                    // For example, configures nx release to target all projects
-                    // except the one called "ignore-me"
-                    "projects": ["*", "!ignore-me"]
-                    // ... nx release config
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-5">
-            <h3>Customize changelog output</h3>
-            <p class="font-size-75">
-              Changelog render options can be passed as an object under
-              <code>release.changelog.projectChangelogs.renderOptions</code> and
-              <code>release.changelog.workspaceChangelog.renderOptions</code> in your <code>nx.json</code> file. Here
-              are all options and default values for the built-in changelog renderer.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-5-6">
-            <pre>
-              <code class="language-json font-size-55 code-only" data-trim>
-                {
-                  // ... more nx.json config
-                  "release": {
-                    "changelog": {
-                      "projectChangelogs": {
-                        "renderOptions": {
-                          // Whether or not the commit authors should be added to the bottom of the changelog in a "Thank You" section.
-                          "authors": true,
-                          // Whether or not the commit references (such as commit and/or PR links) should be included in the changelog.
-                          "commitReferences": true,
-                          // Whether or not to include the date in the version title. It can be set to false to disable it, or true to
-                          // enable with the default of (YYYY-MM-DD).
-                          "versionTitleDate": true
-                        }
-                      },
-                      "workspaceChangelog": {
-                        "renderOptions": {
-                          // Whether or not the commit authors should be added to the bottom of the changelog in a "Thank You" section.
-                          "authors": true,
-                          // Whether or not the commit references (such as commit and/or PR links) should be included in the changelog.
-                          "commitReferences": true,
-                          // Whether or not to include the date in the version title. It can be set to false to disable it, or true to
-                          // enable with the default of (YYYY-MM-DD).
-                          "versionTitleDate": true
-                        }
-                      }
-                    }
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-6">
-            <h3>Using <code>nx release</code> subcommands independently</h3>
-            <p>
-              If you need more advanced or granular control over your release process you can also run these phases
-              independently using the <code>nx release version</code>, <code>nx release changelog</code>, and
-              <code>nx release publish</code> subcommands.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-6-6">
-            <p>
-              Each of these subcommands has their own CLI arguments which you can explore using the
-              <code>--help</code> flag.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx release version --help
-                $ npx nx release changelog --help
-                $ npx nx release publish --help
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="releases-7">
-            <h3>Using the programmatic API for nx release</h3>
-            <p>
-              For the maximum control and power over your release process, it is recommended to use the programmatic API
-              for <code>nx release</code> in your own custom scripts.
-            </p>
-          </section>
-          <section id="releases-8">
-            <pre>
-              <code class="language-typescript font-size-45 code-only" data-trim>
-                import { releaseChangelog, releasePublish, releaseVersion } from 'nx/release';
-                import * as yargs from 'yargs';
-
-                (async () => {
-                  const options = await yargs
-                    .version(false) // don't use the default meaning of version in yargs
-                    .option('version', {
-                      description:
-                        'Explicit version specifier to use, if overriding conventional commits',
-                      type: 'string',
-                    })
-                    .option('dryRun', {
-                      alias: 'd',
-                      description:
-                        'Whether or not to perform a dry-run of the release process, defaults to true',
-                      type: 'boolean',
-                      default: true,
-                    })
-                    .option('verbose', {
-                      description:
-                        'Whether or not to enable verbose logging, defaults to false',
-                      type: 'boolean',
-                      default: false,
-                    })
-                    .parseAsync();
-
-                  const { workspaceVersion, projectsVersionData } = await releaseVersion({
-                    specifier: options.version,
-                    dryRun: options.dryRun,
-                    verbose: options.verbose,
-                  });
-
-                  await releaseChangelog({
-                    versionData: projectsVersionData,
-                    version: workspaceVersion,
-                    dryRun: options.dryRun,
-                    verbose: options.verbose,
-                  });
-
-                  // publishResults contains a map of project names and their exit codes
-                  const publishResults = await releasePublish({
-                    dryRun: options.dryRun,
-                    verbose: options.verbose,
-                  });
-
-                  process.exit(
-                    Object.values(publishResults).every((result) => result.code === 0) ? 0 : 1
-                  );
-                })();
-              </code>
-            </pre>
-            <aside class="notes">
-              <p>
-                Here is a full working example of creating a custom script which processes its own CLI arguments (with
-                --dry-run true by default) and then calls the nx release programmatic API.
-              </p>
-            </aside>
-          </section>
-        </section>
-
-        <section id="mental">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-1">
-            <h2>Mental Model</h2>
-            <aside class="notes">
-              <p>
-                Nx is a VSCode of build tools, with a powerful core, driven by metadata, and extensible through plugins.
-                Nx works with a few concepts to drive your monorepo efficiently, and effectively. We're now going to
-                cover the mental model around how Nx works with project graphs, task graphs, affected commands,
-                computation hashing and caching.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-2">
-            <h3>Project Graph</h3>
-            <img alt="nx project graph diagram" class="shaded" src="img/project-graph.svg" />
-            <aside class="notes">
-              <p>
-                A project graph is used to reflect the source code in your repository and all the external dependencies
-                that aren't authored in your repository, such as Webpack, React, Angular, and so forth.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-3">
-            <h4>Project Graph Analysis</h4>
-            <img alt="updated nx project graph diagram" class="shaded" src="img/project-graph-updated.svg" />
-            <aside class="notes">
-              <p>
-                Nx analyzes your file system to detect projects. Projects are identified by the presence of a
-                package.json file or project.json file. Projects identification can also be customized through plugins.
-                You can manually define dependencies between the project nodes, but you don't have to do it very often.
-                Nx analyzes files' source code, your installed dependencies, TypeScript files, and others figuring out
-                these dependencies for you. Nx also stores the cached project graph, so it only reanalyzes the files you
-                have changed.
-              </p>
-              <p>Nx provides an updated graph after each analysis is done.</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-4">
-            <h3>Metadata-driven</h3>
-            <img alt="screenshot of Nx Console" class="width-75" src="img/metadata.png" />
-            <aside class="notes">
-              <p>
-                Everything in Nx comes with metadata to enable toolability. Nx gathers information about your projects
-                and tasks and then uses that information to help you understand and interact with your codebase. With
-                the right plugins installed, most of the metadata can be inferred directly from your existing
-                configuration files so you don't have to define it manually.
-              </p>
-              <p>
-                This metadata is used by Nx itself, by VSCode and WebStorm integrations, by GitHub integration, and by
-                third-party tools.
-              </p>
-              <p>These tools are able to implement richer experiences with Nx using this metadata.</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-5">
-            <h3>The task graph</h3>
-            <p>Running <code>nx test lib</code> creates a task graph with a single node:</p>
-            <img alt="screenshot of task graph" class="margin-top-1-0" src="img/nx-test-lib.png" />
-            <aside class="notes">
-              <p>The task graph</p>
-              <p>
-                Nx uses the project graph to create a task graph. Any time you run anything, Nx creates a task graph
-                from the project graph and then executes the tasks in that graph.
-              </p>
-              <p>For instance nx test lib creates a task graph with a single node:</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-6">
-            <p>Running <code>nx run-many -t test -p app1 app2 lib</code> creates a task graph that looks like this:</p>
-            <img alt="screenshot of run-many task graph" class="margin-top-1-0" src="img/nx-run-many.png" />
-            <aside class="notes">
-              <p>A task is an invocation of a target. If you invoke the same target twice, you create two tasks.</p>
-              <p>
-                Nx uses the project graph, but the task graph and project graph aren't isomorphic, meaning they aren't
-                directly connected. In the case above, app1 and app2 depend on lib, but running nx run-many -t test -p
-                app1 app2 lib, the created task graph will look like this:
-              </p>
-              <p>
-                Even though the apps depend on lib, testing app1 doesn't depend on the testing lib. This means that the
-                two tasks can run in parallel.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-7">
-            <p>Let's look at the test target relying on its dependencies:</p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-100" data-trim>
-                {
-                  "test": {
-                    "executor": "@nx/jest:jest",
-                    "outputs": ["{workspaceRoot}/coverage/apps/app1"],
-                    "dependsOn": ["^test"],
-                    "options": {
-                      "jestConfig": "apps/app1/jest.config.js",
-                      "passWithNoTests": true
-                    }
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-8">
-            <p>With this, running the same test command creates the following task graph:</p>
-            <img alt="screenshot of test task graph" class="margin-top-1-0" src="img/test-task-graph.png" />
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                This often makes more sense for builds, where to build app1, you want to build lib first. You can also
-                define similar relationships between targets of the same project, including a test target that depends
-                on the build.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-9">
-            <p class="font-size-95">
-              A task graph can contain different targets, and those can run in parallel. For instance, as Nx is building
-              app2, it can be testing app1 at the same time.
-            </p>
-            <img alt="screenshot of test task graph" class="shaded margin-top-1-0" src="img/task-graph-execution.svg" />
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                Nx also runs the tasks in the task graph in the right order. Nx executing tasks in parallel speeds up
-                your overall execution time.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-10">
-            <h3>Affected Commands</h3>
-            <ul class="fragment-list">
-              <li class="fragment">
-                When you run <code>nx test app1</code>, you are telling Nx to run the <code>app1:test</code> task plus
-                all the tasks it depends on.
-              </li>
-              <li class="fragment">
-                When you run <code>nx run-many -t test -p app1 lib</code>, you are telling Nx to do the same for two
-                tasks <code>app1:test</code> and <code>lib:test</code>.
-              </li>
-              <li class="fragment">
-                When you run <code>nx run-many -t test</code>, you are telling Nx to do this for all the projects.
-              </li>
-            </ul>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                As your workspace grows, retesting all projects becomes too slow. To address this Nx implements code
-                change analysis to get the min set of projects that need to be retested. How does it work?
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-11">
-            <p>
-              When you run <code>nx affected -t test</code>, Nx looks at the files you changed in your PR, it will look
-              at the nature of change, and it uses this to figure the list of projects in the workspace that can be
-              affected by this change. It then runs the <code>run-many</code> command with that list.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-12-2">
-            <p>
-              For instance, if my PR changes <code>lib</code>, and I then run <code>nx affected -t test</code>, Nx
-              figures out that <code>app1</code> and <code>app2</code> depend on <code>lib</code>, so it will invoke
-              <code>nx run-many -t test -p app1 app2 lib</code>.
-            </p>
-            <img alt="screenshot of affected graphs" class="shaded margin-top-1-0" src="img/affected.svg" />
-            <aside class="notes">
-              <p>
-                When you run nx affected -t test, Nx looks at the files you changed in your PR, it will look at the
-                nature of change (what exactly did you update in those files), and it uses this to figure the list of
-                projects in the workspace that can be affected by this change. It then runs the run-many command with
-                that list.
-              </p>
-              <p>
-                For instance, if my PR changes lib, and I then run nx affected -t test, Nx figures out that app1 and
-                app2 depend on lib, so it will invoke nx run-many -t test -p app1 app2 lib.
-              </p>
-              <p>
-                Nx analyzes the nature of the changes. For example, if you change the version of Next.js in the
-                package.json, Nx knows that app2 cannot be affected by it, so it only retests app1.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-12">
-            <h3>Computation hashing and caching</h3>
-            <p>
-              Nx runs the tasks in the task graph in the right order. Before running the task, Nx computes its
-              computation hash. As long as the computation hash is the same, the output of running the task is the same.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-13">
-            <h3>How does Nx do it?</h3>
-            <p>By default, the computation hash for say <code>nx test app1</code> includes:</p>
-            <ul class="fragment-list">
-              <li class="fragment">All the source files of <code>app1</code> and <code>lib</code></li>
-              <li class="fragment">Relevant global configuration</li>
-              <li class="fragment">Versions of external dependencies</li>
-              <li class="fragment">Runtime values provisioned by the user</li>
-              <li class="fragment">CLI Command flags</li>
-            </ul>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-14">
-            <img
-              alt="screenshot of nx computation hashing"
-              class="shaded width-100"
-              src="img/computation-hashing.svg"
-            />
-            <aside class="notes">
-              <p>
-                This behavior is customizable. For instance, lint checks may only depend on the source code of the
-                project and global configs. Builds can depend on the .d.ts files of the compiled libs instead of their
-                source.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-15">
-            <img alt="screenshot of nx cache" class="shaded width-70" src="img/cache.svg" />
-            <aside class="notes">
-              <p>
-                After Nx computes the hash for a task, it then checks if it ran this exact computation before. First, it
-                checks locally, and then if it is missing, and if a remote cache is configured, it checks remotely.
-              </p>
-              <p>
-                If Nx finds the computation, Nx retrieves it and replay it. Nx places the right files in the right
-                folders and prints the terminal output. So from the user's point of view, the command ran the same, just
-                a lot faster.
-              </p>
-              <p>
-                If Nx doesn't find this computation, Nx runs the task, and after it completes, it takes the outputs and
-                the terminal output and stores it locally (and if configured remotely). All of this happens
-                transparently, so you don't have to worry about it.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-16">
-            <p>
-              Although conceptually this is fairly straightforward, Nx optimizes this to make this experience good for
-              you. For instance, Nx:
-            </p>
-            <ul class="fragment-list">
-              <li class="fragment">
-                Captures stdout and stderr to make sure the replayed output looks the same, including on Windows.
-              </li>
-              <li class="fragment">Minimizes the IO by remembering what files are replayed where.</li>
-              <li class="fragment">Only shows relevant output when processing a large task graph.</li>
-              <li class="fragment">
-                Provides affordances for troubleshooting cache misses. And many other optimizations.
-              </li>
-            </ul>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-17">
-            <p class="r-fit-text">As your workspace grows, the task graph looks more like this:</p>
-            <img
-              alt="screenshot of complex task graph"
-              class="margin-top-1-0 width-90"
-              src="img/complex-task-graph.png"
-            />
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                All of these optimizations are crucial for making Nx usable for any non-trivial workspace. Only the
-                minimum amount of work happens. The rest is either left as is or restored from the cache.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-18">
-            <h3>Distributed Task Execution</h3>
-            <p>
-              Nx supports running commands across multiple machines. You can either set it up by hand or use Nx Cloud.
-              When using the distributed task execution, Nx is able to run any task graph on many agents instead of
-              locally.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-19">
-            <p>
-              For instance, <code>nx affected --build</code> won't run the build locally (which can take hours for large
-              workspaces). Instead, it will send the Task Graph to Nx Cloud. Nx Cloud Agents will then pick up the tasks
-              they can run and execute them. This happens transparently. If an agent builds <code>app1</code>, it will
-              fetch the outputs for <code>lib</code> if it doesn't have them already.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-20-2">
-            <p>
-              As agents complete tasks, the main job where you invoked <code>nx affected --build</code> will start
-              receiving created files and terminal outputs. After <code>nx affected --build</code> completes, the
-              machine will have the build files and all the terminal outputs as if it ran it locally.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-20">
-            <img alt="screenshot of distributed task execution" class="shaded bottom-padded" src="img/dte.svg" />
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="mental-21">
-            <h3>In summary</h3>
-            <ul class="fragment-list">
-              <li class="fragment">Nx is able to analyze your source code to create a Project Graph.</li>
-              <li class="fragment">
-                Nx can use the project graph and information about projects' targets to create a Task Graph.
-              </li>
-              <li class="fragment">
-                Nx is able to perform code-change analysis to create the smallest task graph for your PR.
-              </li>
-              <li class="fragment">
-                Nx supports computation caching to never execute the same computation twice. This computation cache is
-                pluggable and can be distributed.
-              </li>
-            </ul>
-          </section>
-        </section>
-
-        <section id="caching">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-1">
-            <h2>How Caching Works</h2>
-            <p>By default, the computation hash for something like <code>nx test remixapp</code> includes:</p>
-            <ul class="fragment-list">
-              <li class="fragment">All the source files of <code>remixapp</code> and its dependencies</li>
-              <li class="fragment">Relevant global configuration</li>
-              <li class="fragment">Versions of external dependencies</li>
-              <li class="fragment">Runtime values provisioned by the user such as the version of Node</li>
-              <li class="fragment">CLI Command flags</li>
-            </ul>
-            <aside class="notes">
-              <p>How Caching Works</p>
-              <p>
-                Before running any cacheable task, Nx computes its computation hash. As long as the computation hash is
-                the same, the output of running the task is the same.
-              </p>
-              <p>By default, the computation hash for something like nx test remixapp includes:</p>
-              <p><strong>All</strong> the source files of remixapp and its dependencies</p>
-              <p><strong>Relevant</strong> global configuration</p>
-              <p><strong>Versions</strong> of external dependencies</p>
-              <p><strong>Runtime</strong> values provisioned by the user such as the version of Node</p>
-              <p><strong>CLI</strong> Command flags</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-2">
-            <img alt="screenshot showing how nx caching works" class="shaded width-90" src="img/nx-hashing.svg" />
-            <aside class="notes">
-              <p>
-                This behavior is customizable. For instance, lint checks may only depend on the source code of the
-                project and global configs. Builds can depend on the dts files of the compiled libs instead of their
-                source.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-3">
-            <img alt="screenshot showing how nx caching works" class="shaded width-70" src="img/cache.svg" />
-            <aside class="notes">
-              <p>
-                After Nx computes the hash for a task, it then checks if it ran this exact computation before. First, it
-                checks locally, and then if it is missing, and if a remote cache is configured, it checks remotely. If a
-                matching computation is found, Nx retrieves and replays it. This includes restoring files.
-              </p>
-              <p>
-                Nx places the right files in the right folders and prints the terminal output. From the user's point of
-                view, the command ran the same, just a lot faster.
-              </p>
-              <p>
-                If Nx doesn't find a corresponding computation hash, Nx runs the task, and after it completes, it takes
-                the outputs and the terminal logs and stores them locally (and, if configured, remotely as well). All of
-                this happens transparently, so you don't have to worry about it.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-4">
-            <h3>Fine-tuning Nx's Cache</h3>
-            <p>
-              Each cacheable task defines a set of inputs and outputs. Inputs are factors Nx considers when calculating
-              the computation hash. Outputs are files that will be cached and restored when the computation hash
-              matches.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-5">
-            <h3>Inputs</h3>
-            <p>Inputs are factors Nx considers when calculating the computation hash for a task.</p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-6">
-            <h3>What is Cached</h3>
-            <p>
-              Nx cache works on the process level. Regardless of the tools used to build/test/lint/etc.. your project,
-              the results are cached. This includes:
-            </p>
-            <ul class="fragment-list">
-              <li class="fragment">
-                <strong>Terminal output:</strong> The terminal output generated when running a task. This includes logs,
-                warnings, and errors.
-              </li>
-              <li class="fragment">
-                <strong>Task artifacts:</strong> The output files of a task defined in the outputs property of your
-                project configuration . For example the build output, test results, or linting reports.
-              </li>
-              <li class="fragment">
-                <strong>Hash:</strong> The hash of the inputs to the computation. The inputs include the source code,
-                runtime values, and command line arguments.
-              </li>
-            </ul>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>Note that the hash is included in the cache, but the actual inputs are not.</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-7">
-            <h4><code>project.json</code></h4>
-            <pre>
-              <code class="language-json" data-trim>
-                {
-                  "name": "myapp",
-                  ...
-                  "targets": {
-                    "build": {
-                      ...
-                      "outputs": ["dist/dist/myapp"]
-                    }
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-8">
-            <h4><code>nx.json</code></h4>
-            <pre>
-              <code class="language-json font-size-95" data-trim>
-                {
-                  ...
-                  "targetDefaults": {
-                    "build": {
-                      "dependsOn": [
-                        "^build"
-                      ],
-                      "outputs": [
-                        "{projectRoot}/dist",
-                        "{projectRoot}/build",
-                        "{projectRoot}/public/build"
-                      ]
-                    }
-                  }
-                }
-              </code>
-            </pre>
-            <aside class="notes">
-              <p>
-                If the outputs property for a given target isn't defined in the project's package.json file, Nx will
-                look at the global, workspace-wide definition in the targetDefaults section of nx.json:
-              </p>
-              <p>If neither is defined, Nx defaults to caching dist and build at the root of the repository.</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-9">
-            <h3>Define Cache Inputs</h3>
-            <p class="font-size-75">
-              By default the cache considers all project files (e.g. <code>{projectRoot}/**/*</code>). This behavior can
-              be customized by defining in a much more fine-grained way what files should be included or excluded for
-              each target.
-            </p>
-            <div class="code-columns margin-top-1-0">
-              <div class="width-45">
-                <h4><code>nx.json</code></h4>
-                <pre>
-                  <code class="language-json font-size-70" data-trim>
-                    {
-                      "targetDefaults": {
-                        "build": {
-                          "inputs": [
-                            "{projectRoot}/**/*",
-                            "!{projectRoot}/**/*.md"
-                          ]
-                          ...
-                        },
-                        "test": {
-                          "inputs": [...]
-                        }
-                      }
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-45">
-                <h4><code>project.json</code></h4>
-                <pre>
-                  <code class="language-json font-size-70" data-trim>
-                    {
-                      "name": "some-project",
-                      "targets": {
-                        "build": {
-                          "inputs": ["!{projectRoot}/**/*.md"],
-                          ...
-                        },
-                        "test": {
-                          "inputs": [...]
-                        }
-                        ...
-                      }
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>Inputs may include</p>
-              <ul>
-                <li>source files</li>
-                <li>environment variables</li>
-                <li>runtime inputs</li>
-                <li>command line arguments</li>
-              </ul>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-10">
-            <h3>Args Hash Inputs</h3>
-            <p>
-              Finally, in addition to Source Code Hash Inputs and Runtime Hash Inputs, Nx needs to consider the
-              arguments: For example, <code>nx build remixapp</code> and
-              <code>nx build remixapp -- --flag=true</code> produce different results.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx build remixapp
-                $ npx nx run-many -t build -p remixapp
-              </code>
-            </pre>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                Note, only the flags passed to the npm scripts itself affect results of the computation. For instance,
-                the following commands are identical from the caching perspective.
-              </p>
-              <p>In other words, Nx does not cache what the developer types into the terminal.</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="caching-11">
-            <p class="font-size-95">
-              If you build/test/lint… multiple projects, each individual build has its own hash value and will either be
-              retrieved from cache or run. This means that from the caching point of view, the following command:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell font-size-100" data-trim>
-                $ npx nx run-many -t build -p header footer
-              </code>
-            </pre>
-            <p class="margin-top-1-5">is identical to the following two commands:</p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell font-size-100" data-trim>
-                $ npx nx build header
-                $ npx nx build footer
-              </code>
-            </pre>
-          </section>
-        </section>
-
-        <section id="common-tasks">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-1">
-            <h2>Common Tasks</h2>
-            <p>
-              The tasks that are inferred by plugins or that you define in your project configuration can have any name
-              that you want, but it is helpful for developers if you keep your task naming convention consistent across
-              the projects in your repository. This way, if a developer moves from one project to another, they already
-              know how to launch tasks for the new project.
-            </p>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>Here are some common task names that you can define for your projects.</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-2">
-            <h3><code>build</code></h3>
-            <p>
-              The task might use the <code>@nx/vite</code>, <code>@nx/webpack</code> or <code>@nx/rspack</code> plugins.
-              Or you could have the task launch your own custom script.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json" data-trim>
-                {
-                  "targetDefaults": {
-                    "build": {
-                      "dependsOn": ["^build"]
-                    }
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-3">
-            <p>
-              This task should produce the compiled output of this project. Typically, you'll want to have
-              <code>build</code> tasks depend on the <code>build</code> tasks of project dependencies across the whole
-              repository.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-4">
-            <p>You can set this default in the <code>nx.json</code> file like this:</p>
-            <div class="code-columns margin-top-1-0">
-              <div class="width-30">
-                <h5>Vite</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/vite/plugin",
-                          "options": {
-                            "buildTargetName": "build"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5>Webpack</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/webpack/plugin",
-                          "options": {
-                            "buildTargetName": "build"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-            <div class="code-columns">
-              <div class="width-30">
-                <h5>rspack</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/rspack/plugin",
-                          "options": {
-                            "buildTargetName": "build"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5>Custom Script</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "scripts": {
-                        "build": "ts-node build-script.ts"
-                      }
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-5">
-            <h3><code>serve</code></h3>
-            <p>
-              This task should run your project in a developer preview mode. The task might use the
-              <code>@nx/vite</code>, <code>@nx/webpack</code> or <code>@nx/rspack</code> plugins. Or you could have the
-              task launch your own custom script.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-6">
-            <div class="code-columns margin-top-1-0">
-              <div class="width-30">
-                <h5>Vite</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/vite/plugin",
-                          "options": {
-                            "serveTargetName": "serve"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5>Webpack</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/webpack/plugin",
-                          "options": {
-                            "serveTargetName": "serve"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-            <div class="code-columns">
-              <div class="width-30">
-                <h5>rspack</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/rspack/plugin",
-                          "options": {
-                            "serveTargetName": "serve"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5>Custom Script</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "scripts": {
-                        "serve": "ts-node main.ts"
-                      }
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-7">
-            <h3><code>test</code></h3>
-            <p class="font-size-90">
-              This task typically runs unit tests for a project. The task might use the
-              <code>@nx/vite</code> or <code>@nx/jest</code> plugins. Or you could have the task launch your own custom
-              script.
-            </p>
-            <div class="code-columns margin-top-1-0">
-              <div class="width-30">
-                <h5>Vitest</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/vite/plugin",
-                          "options": {
-                            "testTargetName": "test"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5>Jest</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/jest/plugin",
-                          "options": {
-                            "targetName": "test"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5>Custom Script</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "scripts": {
-                        "test": "ava"
-                      }
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-tasks-8">
-            <h3><code>lint</code></h3>
-            <p>
-              This task should run lint rules for a project. The task might use the
-              <code>@nx/eslint</code> plugin or run your own custom script.
-            </p>
-            <div class="code-columns margin-top-1-0">
-              <div class="width-30">
-                <h5>ESLint</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "plugins": [
-                        {
-                          "plugin": "@nx/eslint/plugin",
-                          "options": {
-                            "targetName": "lint"
-                          }
-                        }
-                      ]
-                    }
-                  </code>
-                </pre>
-              </div>
-              <div class="width-30">
-                <h5>Custom Script</h5>
-                <pre>
-                  <code class="language-json font-size-50" data-trim>
-                    {
-                      "scripts": {
-                        "lint": "sonarts"
-                      }
-                    }
-                  </code>
-                </pre>
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <section data-visibility="hidden" id="common-commands">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-1">
-            <h2>Common Commands</h2>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-2">
-            <h3>Run unit tests for a specific project:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx test lib1
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-3">
-            <h3>Run unit tests for all projects:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx run-many -t test
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-4">
-            <h3>Run unit tests for two projects:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx run-many -t test -p lib1 lib2
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-5">
-            <h3>Run unit tests for affected projects:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx affected -t test
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-6">
-            <h3>Run the kitchen sink on all projects:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx run-many -t build,lint,test,e2e
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-7">
-            <h3>Serve a specific application:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx serve example-web
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-8">
-            <h3>Serve two applications:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx run-many -t serve -p api web
-              </code>
-            </pre>
-            <aside class="notes">
-              <p>Point out the consistency - no matter if Angular, Nest, React, etc. the commands remain the same</p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-9">
-            <h3>Generate a new Angular application:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g @nx/angular:app
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-10">
-            <h3>Generate a new Nest application:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g @nx/nest:app
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-11">
-            <h3>Generate a new Angular library:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g @nx/angular:lib
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-12">
-            <h3>Generate a new Nest library:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g @nx/nest:lib
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-13">
-            <h3>Generate a new Common library:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g @nx/js:lib
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="common-commands-14">
-            <h3>Run an Angular schematic:</h3>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g @schematics/angular:component
-              </code>
-            </pre>
-          </section>
-        </section>
-
-        <section id="linking">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-1">
-            <h2>Typescript Project Linking</h2>
-            <p class="font-size-90">
-              The naive way to reference code in a separate project is to use a relative path in the <code>import</code>
-              statement.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-typescript font-size-100" data-trim>
-                import { someFunction } from '../../teamA/otherProject';
-
-                const result = someFunction();
-              </code>
-            </pre>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                The problem with this approach is that all your import statements become tied to your folder structure.
-                Developers need to know the full path to any project from which they want to import code. Also, if
-                <code>otherProject</code> ever moves locations, there will be superfluous code changes across the entire
-                repository.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-2">
-            <p>
-              A more ergonomic solution is to reference your local projects as if they were external npm packages and
-              then use a project linking mechanism to automatically resolve the project file path behind the scenes.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-typescript font-size-100" data-trim>
-                import { someFunction } from '@myorg/otherProject';
-
-                const result = someFunction();
-              </code>
-            </pre>
-            <aside class="notes">
-              <p><em>Slide End</em></p>
-              <p>
-                There are two different methods that Nx supports for linking TypeScript projects: package manager
-                workspaces and TypeScript path aliases. Project linking with TS path aliases was available with Nx
-                before package managers offered a workspaces project linking approach. The Nx Team has since added full
-                support for workspaces because (1) it has become more common across the TypeScript ecosystem and (2)
-                packages will be resolved using native node module resolution instead of relying on TypeScript.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-3">
-            <h3>Project Linking with Workspaces</h3>
-            <p>
-              To create a new Nx workspace that links projects with package manager workspaces, use the
-              <code>--workspaces</code> flag.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx create-nx-workspace --workspaces
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-4">
-            <h3>Set Up Package Manager Workspaces</h3>
-            <pre>
-              <code class="language-json font-size-100" data-trim>
-                {
-                  "workspaces": ["apps/**", "packages/**"]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-5">
-            <p>
-              If you want to reference a local library project with its own <code>build</code> task, you should include
-              the library in the <code>devDependencies</code> of the application's <code>package.json</code> with
-              <code>*</code> specified as the library's version. <code>*</code>
-              tells npm to use whatever version of the project is available.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-100" data-trim>
-                {
-                  "devDependencies": {
-                    "@my-org/some-project": "*"
-                  }
-                }
-              </code>
-            </pre>
-            <aside class="notes">
-              <p><em>Slide Start</em></p>
-              <p>
-                Defining the workspaces property in the root package.json file lets npm know to look for other
-                package.json files in the specified folders. With this configuration in place, all the dependencies for
-                the individual projects will be installed in the root node_modules folder when npm install is run in the
-                root folder. Also, the projects themselves will be linked in the root node_modules folder to be accessed
-                as if they were npm packages.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-5">
-            <h3>Set Up TypeScript Project References</h3>
-            <p>
-              With workspaces enabled, you can also configure TypeScript project references to speed up your build and
-              typecheck tasks.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-6">
-            <p>
-              The root <code>tsconfig.base.json</code> should contain a <code>compilerOptions</code> property and no
-              other properties. <code>compilerOptions.composite</code> and
-              <code>compilerOptions.declaration</code> should be set to <code>true</code>.
-              <code>compilerOptions.paths</code> should not be set.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-90" data-trim>
-                {
-                  "compilerOptions": {
-                    // Required compiler options
-                    "composite": true,
-                    "declaration": true,
-                    "declarationMaps": true
-                    // Other options...
-                  }
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-7">
-            <p>
-              The root <code>tsconfig.json</code> file should extend <code>tsconfig.base.json</code> and not include any
-              files. It needs to have <code>references</code> for every project in the repository so that editor tooling
-              works correctly.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-100" data-trim>
-                {
-                  "extends": "./tsconfig.base.json",
-                  "files": [], // intentionally empty
-                  "references": [
-                    // UPDATED BY PROJECT GENERATORS
-                    // All projects in the repository
-                  ]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-8">
-            <h3 class="r-fit-text">Individual Project TypeScript Configuration</h3>
-            <p>
-              Each project's <code>tsconfig.json</code> file should extend the <code>tsconfig.base.json</code> file and
-              list <code>references</code> to the project's dependencies.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-55" data-trim>
-                {
-                  "extends": "../../tsconfig.base.json",
-                  "files": [], // intentionally empty
-                  "references": [
-                    // UPDATED BY NX SYNC
-                    // All project dependencies
-                    {
-                      "path": "../utils"
-                    },
-                    // This project's other tsconfig.*.json files
-                    {
-                      "path": "./tsconfig.lib.json"
-                    },
-                    {
-                      "path": "./tsconfig.spec.json"
-                    }
-                  ]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-9">
-            <p>
-              Each project's <code>tsconfig.lib.json</code> file extends the project's <code>tsconfig.json</code> file
-              and adds <code>references</code> to the <code>tsconfig.lib.json</code> files of project dependencies.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-60" data-trim>
-                {
-                  "extends": "./tsconfig.json",
-                  "compilerOptions": {
-                    // Any overrides
-                  },
-                  "include": ["src/**/*.ts"],
-                  "exclude": [
-                    // exclude config and test files
-                  ],
-                  "references": [
-                    // UPDATED BY NX SYNC
-                    // tsconfig.lib.json files for project dependencies
-                    {
-                      "path": "../utils/tsconfig.lib.json"
-                    }
-                  ]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-10">
-            <p>The project's <code>tsconfig.spec.json</code> does not need to reference project dependencies.</p>
-            <pre class="margin-top-2-5">
-              <code class="language-json font-size-80" data-trim>
-                {
-                  "extends": "./tsconfig.json",
-                  "compilerOptions": {
-                    // Any overrides
-                  },
-                  "include": [
-                    // test files
-                  ],
-                  "references": [
-                    // tsconfig.lib.json for this project
-                    {
-                      "path": "./tsconfig.lib.json"
-                    }
-                  ]
-                }
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-11">
-            <h3 class="r-fit-text">Project Linking with TypeScript Path Aliases</h3>
-            <p>
-              The paths for each library are defined in the root <code>tsconfig.base.json</code> and each project's
-              <code>tsconfig.json</code> should extend that file. Note that application projects do not need to have a
-              path defined because no projects will import code from a top-level application.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="linking-12">
-            <pre>
-              <code class="language-json font-size-90" data-trim>
-                {
-                  "compilerOptions": {
-                    // common compiler option defaults for all projects
-                    // ...
-                    // These compiler options must be false or undefined
-                    "composite": false,
-                    "declaration": false,
-                    "paths": {
-                      // These paths are automatically added by Nx library generators
-                      "@myorg/feature-about": ["libs/feature-about/src/index.ts"],
-                      "@myorg/feature-home": ["libs/feature-home/src/index.ts"],
-                      "@myorg/shared-ui": ["libs/shared-ui/src/index.ts"]
-                      // ...
-                    }
-                  }
-                }
-              </code>
-            </pre>
-            <aside class="notes">
-              <p>
-                Linking projects with TypeScript path aliases is configured entirely in the tsconfig files. You can
-                still use package manager workspaces to enable you to define separate third-party dependencies for
-                individual projects, but the local project linking is done by TypeScript instead of the package manager.
-              </p>
-            </aside>
           </section>
         </section>
 
         <section id="libraries">
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="libraries-1">
             <h2>Project Dependency Rules</h2>
-            <p>
-              There are many types of libraries in a workspace. You can identify the type of a library through a naming
-              convention and/or by using the project tagging system. With explicitly defined types, you can also use Nx
-              to enforce project dependency rules based on the types of each project.
-            </p>
+            <aside class="notes">
+              <p>
+                There are many types of libraries in a workspace. You can identify the type of a library through a
+                naming convention and/or by using the project tagging system.
+              </p>
+            </aside>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="libraries-2">
             <p>In order to maintain a certain sense of order, we recommend having a small number of types:</p>
             <ul class="fragment-list">
-              <li class="fragment">
-                <strong>Feature libraries:</strong> Developers should consider feature libraries as libraries that
-                implement container components (with access to data sources) for specific business use cases or pages in
-                an application.
-              </li>
-              <li class="fragment">
-                <strong>UI libraries:</strong> A UI library contains only presentational components.
-              </li>
-              <li class="fragment">
-                <strong>Data-access libraries:</strong> A data-access library contains code for interacting with a
-                back-end system. It also includes all the code related to state management.
-              </li>
-              <li class="fragment">
-                <strong>Utility libraries:</strong> A utility library contains low-level utilities used by many
-                libraries and applications.
-              </li>
+              <li class="fragment">Feature libraries</li>
+              <li class="fragment">UI libraries</li>
+              <li class="fragment">Data-access libraries</li>
+              <li class="fragment">Utility libraries</li>
             </ul>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="libraries-3">
@@ -2533,8 +403,7 @@
             <p>
               A feature library contains a set of files that configure a business use case or a page in an application.
               Most of the components in such a library are container components that interact with data sources. This
-              type of library also contains most of the UI logic, form validation code, etc. Feature libraries are
-              almost always app-specific and are often lazy-loaded.
+              type of library also contains most UI logic, form validation code, etc.
             </p>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="libraries-4">
@@ -2544,19 +413,6 @@
             </p>
             <h4 class="margin-top-1-5">Dependency Constraints</h4>
             <p class="font-size-65">A feature library can depend on any type of library.</p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                libs/
-                └── my-app/
-                    └── feature-home/
-                        └── src/
-                            ├── index.ts
-                            └── lib/
-              </code>
-            </pre>
-            <p class="font-size-50 margin-top-1-0">
-              <code>feature-home</code> is the app-specific feature library (in this case, the "my-app" app).
-            </p>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="libraries-5">
             <h3>UI Libraries</h3>
@@ -2601,15 +457,6 @@
             </p>
             <h4 class="margin-top-1-5">Dependency Constraints</h4>
             <p class="font-size-65">A utility library can depend only on utility libraries.</p>
-            <p class="font-size-65 margin-top-2-0">
-              An example util lib module: <code>libs/shared/util-formatting</code>
-            </p>
-            <pre class="margin-top-1-0">
-              <code class="language-typescript font-size-100" data-trim>
-                export { formatDate, formatTime } from './src/format-date-fns';
-                export { formatCurrency } from './src/format-currency';
-              </code>
-            </pre>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="libraries-11">
             <h3>Enforce Project Dependency Rules</h3>
@@ -2636,15 +483,15 @@
                             "depConstraints": [
                               {
                                 "sourceTag": "type:feature",
-                                "onlyDependOnLibsWithTags": [
-                                  "type:feature",
-                                  "type:ui",
-                                  "type:util"
-                                ]
+                                "onlyDependOnLibsWithTags": ["type:feature", "type:ui", "type:data-access", "type:util"]
                               },
                               {
                                 "sourceTag": "type:ui",
                                 "onlyDependOnLibsWithTags": ["type:ui", "type:util"]
+                              },
+                              {
+                                "sourceTag": "type:data-access",
+                                "onlyDependOnLibsWithTags": ["type:data-access", "type:util"]
                               },
                               {
                                 "sourceTag": "type:util",
@@ -2660,219 +507,58 @@
               </code>
             </pre>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="libraries-13">
-            <h3>Other Types</h3>
-            <p>
-              You will probably come up with other library types that make sense for your organization. That's fine.
-              Just keep a few things in mind:
-            </p>
-            <ul class="fragment-list">
-              <li class="fragment">Keep the number of library types low</li>
-              <li class="fragment">Clearly document what each type of library means</li>
-            </ul>
-          </section>
         </section>
 
-        <section id="folders">
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-1">
-            <h2>Folder Structure</h2>
+        <section id="llm">
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-1">
+            <h2>Enhance Your LLM</h2>
             <p>
-              Nx can work with any folder structure you choose, but it is good to have a plan in place for the folder
-              structure of your monorepo.
-            </p>
-            <p class="margin-top-1-0">
-              Projects are often grouped by scope. A project's scope is either the application to which it belongs or a
-              section within that application.
+              Make your AI assistant significantly smarter by providing it with rich metadata about your workspace
+              structure, project relationships, and architectural decisions. While LLMs are powerful tools for boosting
+              development productivity, their effectiveness depends entirely on the context they have access to.
             </p>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-2">
-            <h3>Move Generator</h3>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-2">
+            <p>Nx bridges this gap by:</p>
+            <ul class="fragment-list">
+              <li class="fragment">
+                Providing <strong>architectural awareness</strong> about your workspace structure and project
+                relationships
+              </li>
+              <li class="fragment">
+                Feeding information about <strong>project ownership and team responsibilities</strong>
+              </li>
+              <li class="fragment">Sharing knowledge about <strong>available tasks</strong> and their configuration</li>
+              <li class="fragment">Including details about <strong>technology stacks</strong> and project types</li>
+              <li class="fragment">Supplying <strong>Nx documentation</strong> context for better assistance</li>
+            </ul>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-3">
+            <h3>How It Works</h3>
+            <img alt="diagram showing how nx enhances your LLM" src="img/nx-enhance-llm-illustration.png" />
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-4">
             <p>
-              Don't be too anxious about choosing the exact right folder structure from the beginning. Projects can be
-              moved or renamed using the
-              <code>@nx/workspace:move</code> generator .
+              Nx maintains comprehensive metadata about your workspace to power features like caching and distributed
+              task execution. Nx Console, hooks into this rich metadata, post-processes it, and feeds it directly to
+              your LLM.
             </p>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-3">
-            <p>
-              For instance, if a project under the booking folder is now being shared by multiple apps, you can move it
-              to the shared folder like this:
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell font-size-95" data-trim>
-                $ npx nx g move --project booking-some-project shared/some-project
-              </code> 
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-4">
-            <h3>Remove Generator</h3>
-            <p class="font-size-90">
-              Similarly, if you no longer need a project, you can remove it with the
-              <code>@nx/workspace:remove generator</code>.
-            </p>
-            <pre class="margin-top-2-5">
-              <code class="language-shell" data-trim>
-                $ npx nx g remove booking-some-project
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-5">
-            <h3>Example Workspace</h3>
-            <pre>
-              <code class="language-shell font-size-90" data-trim>
-                apps/
-                  booking/
-                  check-in/
-                libs/
-                  booking/                 &lt;---- grouping folder
-                    feature-shell/         &lt;---- project
-
-                  check-in/
-                    feature-shell/
-
-                  shared/                  &lt;---- grouping folder
-                    data-access/           &lt;---- project
-
-                    seatmap/               &lt;---- grouping folder
-                      data-access/         &lt;---- project
-                      feature-seatmap/     &lt;---- project
-              </code>
-            </pre>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-5">
+            <p>This enables your LLM to:</p>
+            <ul class="fragment-list">
+              <li class="fragment">
+                Understand the complete workspace structure, including applications and libraries
+              </li>
+              <li class="fragment">Know how different projects are connected and their dependency relationships</li>
+              <li class="fragment">Recognize project technology stacks and available tasks</li>
+              <li class="fragment">Access information about project ownership and team responsibilities</li>
+              <li class="fragment">Utilize Nx documentation to provide more accurate assistance</li>
+            </ul>
             <aside class="notes">
               <p>
-                Let's use Nrwl Airlines as an example organization. This organization has two apps, booking and
-                check-in. In the Nx workspace, projects related to booking are grouped under a libs/booking folder,
-                projects related to check-in are grouped under a libs/check-in folder and projects used in both
-                applications are placed in libs/shared. You can also have nested grouping folders, (i.e.
-                libs/shared/seatmap).
-              </p>
-              <p>
-                The purpose of these folders is to help with organizing by scope. We recommend grouping projects
-                together which are (usually) updated together. It helps minimize the amount of time a developer spends
-                navigating the folder tree to find the right file.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-6">
-            <h3>Sharing Projects</h3>
-            <p>
-              One of the main advantages of using a monorepo is that there is more visibility into code that can be
-              reused across many different applications. Shared projects are a great way to save developers time and
-              effort by reusing a solution to a common problem.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-7">
-            <p>
-              Let's consider our reference monorepo. The <code>shared-data-access</code> project contains the code
-              needed to communicate with the back-end (for example, the URL prefix). We know that this would be the same
-              for all libs; therefore, we should place this in the shared lib and properly document it so that all
-              projects can use it instead of writing their own versions.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-8">
-            <pre>
-              <code class="language-shell font-size-100" data-trim>
-                libs/
-                booking/
-                  data-access/           &lt;---- app-specific project
-            
-                shared/
-                  data-access/           &lt;---- shared project
-            
-                  seatmap/
-                    data-access/         &lt;---- shared project
-                    feature-seatmap/     &lt;---- shared project
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="folders-9">
-            <h3>Workspace Patterns</h3>
-            <div class="code-columns">
-              <div class="fragment width-30">
-                <h5>Standalone App</h5>
-                <pre>
-                  <code class="language-shell font-size-60" data-line-numbers="1,4-5" data-trim>
-                    nx.json
-                    package-lock.json
-                    package.json
-                    project.json
-                    src/
-                    tsconfig.app.json
-                    tsconfig.editor.json
-                    tsconfig.json
-                    tsconfig.spec.json
-                  </code>
-                </pre>
-              </div>
-              <div class="fragment width-30">
-                <h5>Integrated Repo</h5>
-                <pre>
-                  <code class="language-shell font-size-60" data-line-numbers="1-9,12" data-trim>
-                    apps/app1/project.json
-                    apps/app1/src/
-                    apps/app2/project.json
-                    apps/app2/src/
-                    libs/lib1/project.json
-                    libs/lib1/src/
-                    libs/lib2/project.json
-                    libs/lib2/src/
-                    nx.json
-                    package-lock.json
-                    package.json
-                    tsconfig.base.json
-                  </code>
-                </pre>
-              </div>
-              <div class="fragment width-30">
-                <h5>Package-Based Repo</h5>
-                <pre>
-                  <code class="language-shell font-size-60" data-line-numbers="1,4-8" data-trim>
-                    nx.json
-                    package-lock.json
-                    package.json
-                    packages/package1/project.json
-                    packages/package1/src/
-                    packages/package2/project.json
-                    packages/package2/src/
-                    tsconfig.base.json
-                    tsconfig.json
-                  </code>
-                </pre>
-              </div>
-            </div>
-            <aside class="notes">
-              <p>Workspace Patterns</p>
-              <p>
-                With Nx, where you place your code doesn't matter! There are a variety of patterns, but these are not
-                enforced so you are welcome to reorganize at your discretion.
-              </p>
-              <p>
-                <strong>Standalone App</strong>
-                - As you can see here, you can use Nx with a standalone application. So, it doesn't even have to be a
-                monorepo! The first file you see here is the nx.json file. That is one file you will always have in the
-                root of a repo that uses Nx. This is the Nx configuration file. I'm not going to dive deep on this file
-                because it's really not something you touch on a regular basis, it's more of a set it and forget type
-                thing. But think of the nx.json file as your Nx config file with settings that are typically global to
-                all projects in your workspace. The next file I want to call out is the project.json file. Every project
-                is going to have one of these. So, that means every application, every library or package, and even
-                every tool, plugin, or script in the workspace. The last thing you see called out here is the src
-                folder. Of course, that's where your standalone app's code goes.
-              </p>
-              <p>
-                <strong>Integrated Repo</strong>
-                - Now, with an integrated monorepo, we have an apps folder and a libs folder similar to what you see
-                here. Now you'll see there are multiple applications and libraries that each have their own project.json
-                file and src folder. There's also a new file here now, the tsconfig.base.json file. I'm calling this one
-                out because this is a file that you'll notice gets updated anytime you generate a new library. This is
-                the file that contains the configuration for library import paths. So, instead of having your imports be
-                something like ../../../libs/lib1/src/lib/lib.component.ts, it can just be @workspace/lib1. Anyway, if
-                that sounds confusing I'll have a slide that explains it better coming up soon here!
-              </p>
-              <p>
-                <strong>Package-Based Repo</strong>
-                - Okay, last pattern here is the package-based monorepo pattern. Just mentioning this one briefly, but
-                instead of having an apps folder and a libs folder, these repos tend to just be libraries or packages
-                that are all placed into the packages folder.
+                This enhanced context allows your LLM to move beyond simple file-level operations to understand your
+                workspace at an architectural level, making it a more effective development partner.
               </p>
             </aside>
           </section>
@@ -2883,29 +569,38 @@
             <h2>Workshop</h2>
             <p>Prerequisites:</p>
             <ul class="fragment-list">
-              <li class="fragment">
-                <a href="https://nodejs.org/en/download" target="_blank">Node.js</a> (ideally v22/LTS)
-              </li>
-              <li class="fragment">
-                <a href="https://code.visualstudio.com/Download" target="_blank">VSCode</a> (or whatever you prefer)
-              </li>
-              <li class="fragment">
+              <li><a href="https://nodejs.org/en/download" target="_blank">Node.js</a> (LTS)</li>
+              <li><a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a></li>
+              <li>
                 <a href="https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console" target="_blank">
                   Nx Console
                 </a>
-                (if using VSCode)
               </li>
             </ul>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-2">
+            <h3>App Design</h3>
+            <img alt="screenshot of new nx workspace" class="rounded" src="img/nx-demo-example.png" />
+            <aside class="notes">
+              <p>Here's a visual of the data-driven application we're about to build.</p>
+              <p>The content for these cards will be provided by an API that we will build.</p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-3">
+            <h3>App Architecture</h3>
+            <img alt="screenshot of new nx workspace" class="rounded" src="img/nx-demo-architecture.png" />
+            <aside class="notes">
+              <p>Here's an architecture diagram for the project.</p>
+              <p>So, we're going to have 4 apps and 4 libs.</p>
+              <p>We'll have one of each library type as well.</p>
+              <p>So, this will be a pretty solid overview!</p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-4">
             <h3>Create Nx Workspace</h3>
             <pre>
-              <code class="language-shell font-size-55 code-only" data-trim>
-                $ npx create-nx-workspace@latest
-
-                Need to install the following packages:
-                create-nx-workspace@20.6.0
-                Ok to proceed? (y) y
+              <code class="language-shell font-size-60 code-only" data-line-numbers="1,5-15" data-trim>
+                npx --yes create-nx-workspace@latest
 
                 NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
 
@@ -2918,411 +613,51 @@
                 ✔ Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? · No
                 ✔ Which unit test runner would you like to use? · jest
                 ✔ Test runner to use for end to end (E2E) tests · playwright
-                ✔ Which CI provider would you like to use? · github
+                ✔ Which CI provider would you like to use? · skip
+                ✔ Would you like remote caching to make your build faster? · skip
 
-                NX   Creating your v20.6.0 workspace.
+                NX   Creating your v21.1.2 workspace.
 
                 ✔ Installing dependencies with npm
                 ✔ Successfully created the workspace: nx-demo.
-                ✔ Nx Cloud has been set up successfully
-                ✔ CI workflow has been generated successfully
 
-                NX   Your CI setup is almost complete.
+                NX   Welcome to the Nx community! 👋
 
-                Finish it by visiting: https://cloud.nx.app/connect/Y6eYBo7MrL
-                
-                 NX   Welcome to the Nx community! 👋
-                
                 🌟 Star Nx on GitHub: https://github.com/nrwl/nx
                 📢 Stay up to date on X: https://x.com/nxdevtools
                 💬 Discuss Nx on Discord: https://go.nx.dev/community
               </code>
             </pre>
           </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-3">
-            <h3>Open VSCode</h3>
-            <pre>
-              <code class="language-shell font-size-100 code-only" data-trim>
-                $ cd nx-demo
-                $ code .
-              </code>
-            </pre>
-            <aside class="notes">
-              <p>
-                Just like when you clone a repo, you'll need to cd into the newly created directly. And, of course if
-                you're using VSCode, you can just do code . to open it.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-4">
-            <img alt="screenshot of new nx workspace" src="img/nx-workspace.png" />
-            <aside class="notes">
-              <p>
-                Once you are done, you should have a workspace that looks something like this. Now, before we go
-                exploring the workspace, I want to generate a few more things, so let's do that!
-              </p>
-            </aside>
-          </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-5">
-            <h3>Install <code>@nx/nest</code></h3>
+            <h3>Run a few commands</h3>
             <pre>
-              <code class="language-shell font-size-70 code-only" data-trim>
-                $ npx nx add @nx/nest
+              <code class="language-shell" data-line-numbers="1,4,7" data-trim>
+                cd nx-demo
 
-                ✔ Installing @nx/nest@20.6.0...
+                # Install the Nx Nest Plugin
+                npx nx add @nx/nest
 
-                NX  Generating @nx/nest:init
-
-                UPDATE package.json
-
-                added 15 packages, removed 1 package, changed 4 packages, and audited 1557 packages in 2s
-
-                231 packages are looking for funding
-                  run `npm fund` for details
-
-                found 0 vulnerabilities
-                ✔ Initializing @nx/nest...
-
-                NX   Package @nx/nest added successfully.
+                # Open VSCode
+                code .
               </code>
             </pre>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-6">
-            <h3>Generate API</h3>
-            <pre>
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx g @nx/nest:app
-
-                NX  Generating @nx/nest:application
-
-                ✔ Which directory do you want to create the application in? · apps/api
-                ✔ Which linter would you like to use? · eslint
-                ✔ Which unit test runner would you like to use? · jest
-                UPDATE package.json
-                UPDATE nx.json
-                CREATE apps/api/src/assets/.gitkeep
-                CREATE apps/api/src/main.ts
-                CREATE apps/api/tsconfig.app.json
-                CREATE apps/api/tsconfig.json
-                CREATE apps/api/webpack.config.js
-                CREATE apps/api/project.json
-                CREATE apps/api/eslint.config.mjs
-                CREATE apps/api/tsconfig.spec.json
-                CREATE apps/api/jest.config.ts
-                CREATE apps/api-e2e/project.json
-                CREATE apps/api-e2e/jest.config.ts
-                CREATE apps/api-e2e/src/api/api.spec.ts
-                CREATE apps/api-e2e/src/support/global-setup.ts
-                CREATE apps/api-e2e/src/support/global-teardown.ts
-                CREATE apps/api-e2e/src/support/test-setup.ts
-                CREATE apps/api-e2e/tsconfig.json
-                CREATE apps/api-e2e/tsconfig.spec.json
-                CREATE apps/api-e2e/eslint.config.mjs
-                CREATE apps/api/src/app/app.controller.spec.ts
-                CREATE apps/api/src/app/app.controller.ts
-                CREATE apps/api/src/app/app.module.ts
-                CREATE apps/api/src/app/app.service.spec.ts
-                CREATE apps/api/src/app/app.service.ts
-
-                added 35 packages, changed 1 package, and audited 1592 packages in 3s
-
-                236 packages are looking for funding
-                  run `npm fund` for details
-
-                found 0 vulnerabilities
-
-                NX   👀 View Details of api-e2e
-
-                Run "nx show project api-e2e" to view details about this project.
-
-                NX   👀 View Details of api
-
-                Run "nx show project api" to view details about this project.
-              </code>
-            </pre>
+            <img alt="screenshot of new nx workspace" src="img/nx-workspace-1.png" />
+            <aside class="notes">
+              <p>Once you are done, you should have a workspace that looks something like this.</p>
+            </aside>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-7">
-            <h3>Generate DTO Library</h3>
-            <pre>
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx g @nx/js:lib
-
-                NX  Generating @nx/js:library
-
-                ✔ Which directory do you want to create the library in? · libs/common/dtos
-                ✔ Which bundler would you like to use to build the library? · esbuild
-                ✔ Which linter would you like to use? · eslint
-                ✔ Which unit test runner would you like to use? · jest
-                CREATE libs/common/dtos/tsconfig.lib.json
-                CREATE libs/common/dtos/tsconfig.json
-                CREATE libs/common/dtos/src/index.ts
-                CREATE libs/common/dtos/src/lib/dtos.spec.ts
-                CREATE libs/common/dtos/src/lib/dtos.ts
-                CREATE libs/common/dtos/README.md
-                CREATE libs/common/dtos/package.json
-                UPDATE nx.json
-                CREATE libs/common/dtos/project.json
-                UPDATE package.json
-                CREATE libs/common/dtos/eslint.config.mjs
-                CREATE libs/common/dtos/tsconfig.spec.json
-                CREATE libs/common/dtos/jest.config.ts
-                UPDATE tsconfig.base.json
-
-                added 7 packages, changed 2 packages, and audited 1599 packages in 2s
-
-                236 packages are looking for funding
-                  run `npm fund` for details
-
-                1 moderate severity vulnerability
-
-                To address all issues (including breaking changes), run:
-                  npm audit fix --force
-
-                Run `npm audit` for details.
-
-                NX   👀 View Details of dtos
-
-                Run "nx show project dtos" to view details about this project.
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-8">
-            <h3>Generate Feature Home Library</h3>
-            <pre>
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx g @nx/angular:lib --name feature-home
-
-                NX  Generating @nx/angular:library
-
-                ✔ Which directory do you want to create the library in? · libs/web/home/feature
-                CREATE libs/web/home/feature/project.json
-                CREATE libs/web/home/feature/README.md
-                CREATE libs/web/home/feature/tsconfig.json
-                CREATE libs/web/home/feature/tsconfig.lib.json
-                CREATE libs/web/home/feature/src/index.ts
-                CREATE libs/web/home/feature/jest.config.ts
-                CREATE libs/web/home/feature/src/test-setup.ts
-                CREATE libs/web/home/feature/tsconfig.spec.json
-                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.css
-                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.html
-                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.spec.ts
-                CREATE libs/web/home/feature/src/lib/feature-home/feature-home.component.ts
-                CREATE libs/web/home/feature/eslint.config.mjs
-                UPDATE tsconfig.base.json
-
-                NX   👀 View Details of feature-home
-
-                Run "nx show project feature-home" to view details about this project.
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-9">
-            <h3>Generate Data Acces Home Library</h3>
-            <pre>
-              <code class="language-shell font-size-65" data-trim>
-                $ npx nx g @nx/angular:lib --name data-access-home
-
-                NX  Generating @nx/angular:library
-
-                ✔ Which directory do you want to create the library in? · libs/web/home/data-access
-                CREATE libs/web/home/data-access/project.json
-                CREATE libs/web/home/data-access/README.md
-                CREATE libs/web/home/data-access/tsconfig.json
-                CREATE libs/web/home/data-access/tsconfig.lib.json
-                CREATE libs/web/home/data-access/src/index.ts
-                CREATE libs/web/home/data-access/jest.config.ts
-                CREATE libs/web/home/data-access/src/test-setup.ts
-                CREATE libs/web/home/data-access/tsconfig.spec.json
-                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.css
-                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.html
-                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.spec.ts
-                CREATE libs/web/home/data-access/src/lib/data-access-home/data-access-home.component.ts
-                CREATE libs/web/home/data-access/eslint.config.mjs
-                UPDATE tsconfig.base.json
-
-                NX   👀 View Details of data-access-home
-
-                Run "nx show project data-access-home" to view details about this project.
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-10">
-            <h3>Generate UI Home Library</h3>
-            <pre>
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx g @nx/angular:lib --name ui-home
-
-                NX  Generating @nx/angular:library
-
-                ✔ Which directory do you want to create the library in? · libs/web/home/ui
-                CREATE libs/web/home/ui/project.json
-                CREATE libs/web/home/ui/README.md
-                CREATE libs/web/home/ui/tsconfig.json
-                CREATE libs/web/home/ui/tsconfig.lib.json
-                CREATE libs/web/home/ui/src/index.ts
-                CREATE libs/web/home/ui/jest.config.ts
-                CREATE libs/web/home/ui/src/test-setup.ts
-                CREATE libs/web/home/ui/tsconfig.spec.json
-                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.css
-                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.html
-                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.spec.ts
-                CREATE libs/web/home/ui/src/lib/ui-home/ui-home.component.ts
-                CREATE libs/web/home/ui/eslint.config.mjs
-                UPDATE tsconfig.base.json
-
-                NX   👀 View Details of ui-home
-
-                Run "nx show project ui-home" to view details about this project.
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-11">
-            <h3>Generate Util Home Library</h3>
-            <pre>
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx g @nx/angular:lib --name util-home
-
-                NX  Generating @nx/angular:library
-
-                ✔ Which directory do you want to create the library in? · libs/web/home/util
-                CREATE libs/web/home/util/project.json
-                CREATE libs/web/home/util/README.md
-                CREATE libs/web/home/util/tsconfig.json
-                CREATE libs/web/home/util/tsconfig.lib.json
-                CREATE libs/web/home/util/src/index.ts
-                CREATE libs/web/home/util/jest.config.ts
-                CREATE libs/web/home/util/src/test-setup.ts
-                CREATE libs/web/home/util/tsconfig.spec.json
-                CREATE libs/web/home/util/src/lib/util-home/util-home.component.css
-                CREATE libs/web/home/util/src/lib/util-home/util-home.component.html
-                CREATE libs/web/home/util/src/lib/util-home/util-home.component.spec.ts
-                CREATE libs/web/home/util/src/lib/util-home/util-home.component.ts
-                CREATE libs/web/home/util/eslint.config.mjs
-                UPDATE tsconfig.base.json
-
-                NX   👀 View Details of util-home
-
-                Run "nx show project util-home" to view details about this project.
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-12">
-            <h3>Generate Cat Facts SDK</h3>
-            <pre>
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx g @nx/nest:lib
-
-                NX  Generating @nx/nest:library
-
-                ✔ Which directory do you want to create the library in? · libs/api/cat-facts-sdk
-                ✔ Which linter would you like to use? · eslint
-                ✔ Which unit test runner would you like to use? · jest
-                CREATE libs/api/cat-facts-sdk/tsconfig.lib.json
-                CREATE libs/api/cat-facts-sdk/tsconfig.json
-                CREATE libs/api/cat-facts-sdk/src/index.ts
-                CREATE libs/api/cat-facts-sdk/README.md
-                CREATE libs/api/cat-facts-sdk/project.json
-                CREATE libs/api/cat-facts-sdk/eslint.config.mjs
-                CREATE libs/api/cat-facts-sdk/tsconfig.spec.json
-                CREATE libs/api/cat-facts-sdk/jest.config.ts
-                UPDATE tsconfig.base.json
-                CREATE libs/api/cat-facts-sdk/src/lib/cat-facts-sdk.module.ts
-
-                NX   👀 View Details of cat-facts-sdk
-
-                Run "nx show project cat-facts-sdk" to view details about this project.
-
-                NX   👀 View Details of cat-facts-sdk
-
-                Run "nx show project cat-facts-sdk" to view details about this project.
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-13">
-            <h3>Generate Cataas SDK</h3>
-            <pre>
-              <code class="language-shell font-size-70" data-trim>
-                $ npx nx g @nx/nest:lib
-
-                NX  Generating @nx/nest:library
-
-                ✔ Which directory do you want to create the library in? · libs/api/cataas-sdk
-                ✔ Which linter would you like to use? · eslint
-                ✔ Which unit test runner would you like to use? · jest
-                CREATE libs/api/cataas-sdk/tsconfig.lib.json
-                CREATE libs/api/cataas-sdk/tsconfig.json
-                CREATE libs/api/cataas-sdk/src/index.ts
-                CREATE libs/api/cataas-sdk/README.md
-                CREATE libs/api/cataas-sdk/project.json
-                CREATE libs/api/cataas-sdk/eslint.config.mjs
-                CREATE libs/api/cataas-sdk/tsconfig.spec.json
-                CREATE libs/api/cataas-sdk/jest.config.ts
-                UPDATE tsconfig.base.json
-                CREATE libs/api/cataas-sdk/src/lib/cataas-sdk.module.ts
-
-                NX   👀 View Details of cataas-sdk
-
-                Run "nx show project cataas-sdk" to view details about this project.
-
-                NX   👀 View Details of cataas-sdk
-
-                Run "nx show project cataas-sdk" to view details about this project.
-              </code>
-            </pre>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-14">
-            <img alt="updated screenshot of nx workspace" src="img/updated-nx-workspace.png" />
-            <aside class="notes">
-              <p>Alright, so here's the current view of our workspace after all that code generation!</p>
-              <p>We have 4 applications:</p>
-              <ul>
-                <li>api is our NestJS application</li>
-                <li>api-e2e is our jest-based API test suite</li>
-                <li>web is our Angular application</li>
-                <li>web-e2e is our Playwright-based E2E test suite</li>
-              </ul>
-              <p>We have 7 libraries:</p>
-              <ul>
-                <li>api/cat-facts-sdk is our SDK for integrating with the Cat Facts API</li>
-                <li>api/cataas-sdk is our SDK for integrating with the Cataas API</li>
-                <li>common/dtos is our common interfaces or Data Transfer Objects</li>
-                <li>web/home/data-access is our data-access library for the home feature</li>
-                <li>web/home/feature is our feature library for the home feature</li>
-                <li>web/home/ui is our ui library for the home feature</li>
-                <li>web/home/util is our util library for the home feature</li>
-              </ul>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-15">
-            <img alt="screenshot of demo tsconfig.base.json file" src="img/demo-tsconfig-base.png" />
-            <aside class="notes">
-              <p>
-                Here are those 7 libraries again listed in our tsconfig.base.json file. This shows you the import paths
-                you can use to import these libraries. Now, the next thing we want to do is update the workspace to
-                properly enforce our module boundaries and adhere to Nx best practices.
-              </p>
-            </aside>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-16">
             <h4><code>eslint.config.mjs</code></h4>
             <pre>
-              <code class="language-javascript font-size-70 code-only" data-trim>
+              <code class="language-typescript font-size-95 code-only" data-line-numbers="2-19" data-ln-start-from="17" data-trim>
+                ...
                 depConstraints: [
                   {
-                    sourceTag: 'scope:web',
-                    onlyDependOnLibsWithTags: ['scope:web', 'scope:common'],
-                  },
-                  {
-                    sourceTag: 'scope:api',
-                    onlyDependOnLibsWithTags: ['scope:api', 'scope:common'],
-                  },
-                  {
-                    sourceTag: 'scope:common',
-                    onlyDependOnLibsWithTags: ['scope:common'],
-                  },
-                  {
                     sourceTag: 'type:feature',
-                    onlyDependOnLibsWithTags: ['type:feature', 'type:ui', 'type:util'],
+                    onlyDependOnLibsWithTags: ['type:*'],
                   },
                   {
                     sourceTag: 'type:data-access',
@@ -3337,42 +672,410 @@
                     onlyDependOnLibsWithTags: ['type:util'],
                   },
                 ],
+                ...
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-8">
+            <h4><code>apps/web/project.json</code></h4>
+            <pre>
+              <code class="language-json font-size-95" data-line-numbers="7" data-trim>
+                {
+                  "name": "web",
+                  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+                  "projectType": "application",
+                  "prefix": "app",
+                  "sourceRoot": "apps/web/src",
+                  "tags": ["type:feature"],
+                  ...
+                }
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-9">
+            <h4><code>apps/web/src/app/app.config.ts</code></h4>
+            <pre>
+              <code class="language-typescript font-size-75" data-line-numbers="1,10" data-trim>
+                import { provideHttpClient } from '@angular/common/http';
+                import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+                import { provideRouter } from '@angular/router';
+                import { appRoutes } from './app.routes';
+
+                export const appConfig: ApplicationConfig = {
+                  providers: [
+                    provideZoneChangeDetection({ eventCoalescing: true }),
+                    provideRouter(appRoutes),
+                    provideHttpClient(),
+                  ],
+                };
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-10">
+            <h3>Generate API Application</h3>
+            <pre>
+              <code class="language-shell" data-line-numbers data-trim>
+                npx nx generate @nx/nest:application \
+                  --directory=apps/api \
+                  --frontendProject=web \
+                  --linter=eslint \
+                  --name=api \
+                  --tags=type:feature \
+                  --unitTestRunner=jest \
+                  --no-interactive
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-11">
+            <h3>Generate DTOs Library</h3>
+            <pre>
+              <code class="language-shell" data-line-numbers data-trim>
+                npx nx generate @nx/js:library \
+                  --directory=libs/util-dtos \
+                  --bundler=none \
+                  --linter=eslint \
+                  --name=util-dtos \
+                  --unitTestRunner=jest \
+                  --tags=type:util \
+                  --no-interactive
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-12">
+            <h3>Generate Dashboard Library</h3>
+            <pre>
+              <code class="language-shell" data-line-numbers data-trim>
+                npx nx generate @nx/angular:library \
+                  --directory=libs/feature-dashboard \
+                  --name=feature-dashboard \
+                  --flat=true \
+                  --inlineStyle=true \
+                  --inlineTemplate=true \
+                  --style=scss \
+                  --tags=type:feature \
+                  --no-interactive
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-13">
+            <h3>Generate Card Library</h3>
+            <pre>
+              <code class="language-shell" data-line-numbers data-trim>
+                npx nx generate @nx/angular:library \
+                  --directory=libs/ui-card \
+                  --name=ui-card \
+                  --flat=true \
+                  --inlineStyle=true \
+                  --inlineTemplate=true \
+                  --style=scss \
+                  --tags=type:ui \
+                  --no-interactive
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-14">
+            <h3>Generate Data Access Library</h3>
+            <pre>
+              <code class="language-shell" data-line-numbers data-trim>
+                npx nx generate @nx/angular:library \
+                  --directory=libs/data-access-dashboard \
+                  --name=data-access-dashboard \
+                  --flat=true \
+                  --inlineStyle=true \
+                  --inlineTemplate=true \
+                  --style=scss \
+                  --tags=type:data-access \
+                  --no-interactive
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-15">
+            <img alt="updated screenshot of new nx workspace" src="img/nx-workspace-2.png" />
+            <aside class="notes">
+              <p>Alright, so here's the current view of our workspace after all that code generation!</p>
+              <p>We have 4 applications:</p>
+              <ul>
+                <li>api is our Nest application</li>
+                <li>api-e2e is our API tests</li>
+                <li>web is our Angular application</li>
+                <li>web-e2e is our E2E tests</li>
+              </ul>
+              <p>We have 4 libraries:</p>
+              <ul>
+                <li>data-access-dashboard is our data-access library for the dashboard</li>
+                <li>feature-dashboard is our feature library for the dashboard</li>
+                <li>ui-card is a ui library for cards</li>
+                <li>util-dtos is a util library for data transfer object definitions</li>
+              </ul>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-16">
+            <h3>Try out <code>run-many</code></h3>
+            <pre>
+              <code class="language-shell font-size-85 code-only" data-line-numbers data-trim>
+                npx nx run-many -t build lint test
+
+                ✔  nx run web:test
+                ✔  nx run web:build:production
+                ✔  nx run api:build
+                ✔  nx run api:lint
+                ✔  nx run web:lint
+                ✔  nx run ui-card:test
+                ✔  nx run api-e2e:lint
+                ✔  nx run util-dtos:lint
+                ✔  nx run feature-dashboard:lint
+                ✔  nx run data-access-dashboard:lint
+                ✔  nx run data-access-dashboard:test
+                ✔  nx run feature-dashboard:test
+                ✔  nx run util-dtos:test
+                ✔  nx run ui-card:lint
+                ✔  nx run web-e2e:lint
+
+                ————————————————————————————————————————————————————————————————
+
+                NX   Successfully ran targets build, lint, test for 8 projects (14s)
               </code>
             </pre>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-17">
+            <h3>Try <code>run-many</code> again</h3>
             <pre>
-              <code class="language-shell font-size-70 code-only" data-trim>
-                $ npx nx run-many -t lint test build
+              <code class="language-shell font-size-70 code-only" data-line-numbers data-trim>
+                npx nx run-many -t build lint test
 
-                ✔  nx run api:lint (660ms)
-                ✔  nx run web:lint (943ms)
-                ✔  nx run web:build:production (2s)
-                ✔  nx run api:build (2s)
-                ✔  nx run api-e2e:lint (634ms)
-                ✔  nx run web:test (2s)
-                ✔  nx run ui-home:lint (845ms)
-                ✔  nx run dtos:test (1s)
-                ✔  nx run cataas-sdk:test (691ms)
-                ✔  nx run cat-facts-sdk:test (668ms)
-                ✔  nx run util-home:test (2s)
-                ✔  nx run feature-home:test (2s)
-                ✔  nx run data-access-home:lint (820ms)
-                ✔  nx run cat-facts-sdk:lint (583ms)
-                ✔  nx run data-access-home:test (2s)
-                ✔  nx run feature-home:lint (811ms)
-                ✔  nx run cataas-sdk:lint (564ms)
-                ✔  nx run dtos:lint (617ms)
-                ✔  nx run dtos:build (683ms)
-                ✔  nx run util-home:lint (832ms)
-                ✔  nx run web-e2e:lint (584ms)
-                ✔  nx run ui-home:test (2s)
+                ✔  nx run web:build:production
+                ✔  nx run web:test
+                ✔  nx run api:build
+                ✔  nx run api:lint
+                ✔  nx run web:lint
+                ✔  nx run data-access-dashboard:test
+                ✔  nx run ui-card:test
+                ✔  nx run feature-dashboard:test
+                ✔  nx run util-dtos:test
+                ✔  nx run data-access-dashboard:lint
+                ✔  nx run feature-dashboard:lint
+                ✔  nx run ui-card:lint
+                ✔  nx run api-e2e:lint
+                ✔  nx run util-dtos:lint
+                ✔  nx run web-e2e:lint
 
-                —————————————————————————————————————————————————————————————————————————————————————————————
+                ————————————————————————————————————————————————————————————————
 
-                NX   Successfully ran targets lint, test, build for 11 projects (10s)
+                NX   Successfully ran targets build, lint, test for 8 projects (275ms)
+
+                Nx read the output from the cache instead of running the command for 15 out of 15 tasks.
               </code>
             </pre>
+            <aside class="notes">
+              <p>Notice that 15 out of 15 tasks were pulled from cache!</p>
+              <p>The original run took 14s, this one only took 275ms!</p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-18">
+            <h4><code>apps/web/src/app/app.component.html</code></h4>
+            <pre>
+              <code class="language-typescript" data-line-numbers data-trim>
+                <router-outlet></router-outlet>
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-19">
+            <h4><code>apps/web/src/app/app.routes.ts</code></h4>
+            <pre>
+              <code class="language-typescript font-size-100" data-line-numbers="4-10" data-trim>
+                import { Route } from '@angular/router';
+
+                export const appRoutes: Route[] = [
+                  {
+                    loadComponent: () =>
+                      import('@nx-demo/feature-dashboard').then(
+                        (m) => m.FeatureDashboardComponent
+                      ),
+                    path: '',
+                  },
+                ];
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-20">
+            <h4><code>libs/util-dtos/src/lib/util-dtos.ts</code></h4>
+            <pre>
+              <code class="language-typescript font-size-100" data-line-numbers="1" data-trim>
+                import { UiCardComponent } from '@nx-demo/ui-card';
+
+                export function utilDtos(): string {
+                  return 'util-dtos';
+                }
+              </code>
+            </pre>
+            <aside class="notes">
+              <p>Demonstrate that enforce module boundaries prevents this with an error.</p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-21">
+            <h4><code>libs/util-dtos/src/lib/util-dtos.ts</code></h4>
+            <pre>
+              <code class="language-typescript" data-line-numbers data-trim>
+                export interface CardDto {
+                  description: string;
+                  title: string;
+                }
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-22">
+            <h4><code>apps/api/src/app/app.controller.ts</code></h4>
+            <pre>
+              <code class="language-typescript font-size-100" data-line-numbers="8" data-trim>
+                import { Controller, Get } from '@nestjs/common';
+                import { AppService } from './app.service';
+
+                @Controller()
+                export class AppController {
+                  constructor(private readonly appService: AppService) {}
+
+                  @Get('dashboard')
+                  getData() {
+                    return this.appService.getData();
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-23">
+            <h4><code>apps/api/src/app/app.service.ts</code></h4>
+            <pre>
+              <code class="language-typescript font-size-90 code-only" data-line-numbers="2,6-21" data-trim>
+                import { Injectable } from '@nestjs/common';
+                import { CardDto } from '@nx-demo/util-dtos';
+
+                @Injectable()
+                export class AppService {
+                  getData(): CardDto[] {
+                    return [
+                      {
+                        title: 'Card 1',
+                        description: 'This is the first card description.',
+                      },
+                      {
+                        title: 'Card 2',
+                        description: 'This is the second card description.',
+                      },
+                      {
+                        title: 'Card 3',
+                        description: 'This is the third card description.',
+                      },
+                    ];
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-24">
+            <h4><code>libs/data-access-dashboard/src/lib/dashboard.service.ts</code></h4>
+            <p class="smaller">You will need to rename the component file.</p>
+            <pre>
+              <code class="language-typescript font-size-100 code-only" data-line-numbers data-trim>
+                import { HttpClient } from '@angular/common/http';
+                import { inject, Injectable } from '@angular/core';
+                import { CardDto } from '@nx-demo/util-dtos';
+                import { Observable } from 'rxjs';
+
+                @Injectable({
+                  providedIn: 'root',
+                })
+                export class DashboardService {
+                  private readonly http = inject(HttpClient);
+
+                  public getDashboardData(): Observable&lt;CardDto[]&gt; {
+                    return this.http.get&lt;CardDto[]&gt;('/api/dashboard');
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-25">
+            <h4><code>libs/ui-card/src/lib/ui-card.component.ts</code></h4>
+            <pre>
+              <code class="language-typescript font-size-80 code-only" data-line-numbers="2,7-20,23-24" data-trim>
+                import { CommonModule } from '@angular/common';
+                import { Component, input } from '@angular/core';
+
+                @Component({
+                  selector: 'lib-ui-card',
+                  imports: [CommonModule],
+                  styles: `
+                    .card {
+                      background-color: #f9f9f9;
+                      border: 1px solid #ddd;
+                      border-radius: 1rem;
+                      padding: 1rem;
+                    }
+                  `,
+                  template: `
+                    &lt;article class="card"&gt;
+                      &lt;h3&gt;{{ title() }}&lt;/h3&gt;
+                      &lt;p&gt;{{ description() }}&lt;/p&gt;
+                    &lt;/article&gt;
+                  `,
+                })
+                export class UiCardComponent {
+                  public description = input.required&lt;string&gt;();
+                  public title = input.required&lt;string&gt;();
+                }
+              </code>
+            </pre>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="workshop-26">
+            <h4 class="r-fit-text"><code>libs/feature-dashboard/src/lib/feature-dashboard.component.ts</code></h4>
+            <pre>
+              <code class="language-typescript font-size-60" data-line-numbers="2-4,8-34,37-39" data-trim>
+                import { CommonModule } from '@angular/common';
+                import { Component, inject } from '@angular/core';
+                import { DashboardService } from '@nx-demo/data-access-dashboard';
+                import { UiCardComponent } from '@nx-demo/ui-card';
+
+                @Component({
+                  selector: 'lib-feature-dashboard',
+                  imports: [CommonModule, UiCardComponent],
+                  styles: `
+                    h1 {
+                      text-align: center;
+                    }
+
+                    section {
+                      display: flex;
+                      gap: 1rem;
+                      justify-content: center;
+                    }
+                  `,
+                  template: `
+                    &lt;h1&gt;Dashboard&lt;/h1&gt;
+                    &lt;section&gt;
+                      @if (cards$ | async; as cards) {
+                        @for (card of cards; track $index) {
+                          &lt;lib-ui-card
+                            [description]="card.description"
+                            [title]="card.title"
+                          &gt;&lt;/lib-ui-card&gt;
+                        }
+                      } @else {
+                        &lt;p&gt;Loading...&lt;/p&gt;
+                      }
+                    &lt;/section&gt;
+                  `,
+                })
+                export class FeatureDashboardComponent {
+                  private readonly service = inject(DashboardService);
+
+                  public cards$ = this.service.getDashboardData();
+                }
+              </code>
+            </pre>
+            <aside class="notes">
+              <p>And, that's it. Let's give it a test with npx nx run-many.</p>
+              <p>If we have time, we can check out npx nx graph.</p>
+            </aside>
           </section>
         </section>
       </div>

@@ -1,25 +1,24 @@
 {
-  "name": "reveal.js",
-  "version": "5.1.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
+  "name": "nx-workshop",
+  "version": "1.0.0",
+  "description": "An Nx workshop by JNeal Codes",
+  "homepage": "https://github.com/jtneal/nx-workshop",
   "main": "dist/reveal.js",
   "module": "dist/reveal.esm.js",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
     "build": "gulp build"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
+    "name": "JNeal Codes",
+    "email": "jason@jneal.com",
+    "web": "https://jneal.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/jtneal/nx-workshop.git"
   },
   "engines": {
     "node": ">=18.0.0"

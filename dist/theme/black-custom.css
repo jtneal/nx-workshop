@@ -751,6 +751,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   border-radius: 16px;
 }
 
+.rounded {
+  border-radius: 16px;
+}
+
 .bottom-padded {
   padding-bottom: 21px;
 }
