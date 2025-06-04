@@ -161,7 +161,7 @@
             <img alt="screenshot of Nx architecture" class="shaded width-90" src="img/nx-architecture.svg" />
             <aside class="notes">
               <p>
-                This is a high-level overview of the Nx architecutre. It shows how the different pieces of Nx are
+                This is a high-level overview of the Nx architecture. It shows how the different pieces of Nx are
                 composed together. Okay, so that's what Nx is, but how does it really help you?
               </p>
             </aside>
@@ -513,54 +513,81 @@
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-1">
             <h2>Enhance Your LLM</h2>
             <p>
-              Make your AI assistant significantly smarter by providing it with rich metadata about your workspace
-              structure, project relationships, and architectural decisions. While LLMs are powerful tools for boosting
-              development productivity, their effectiveness depends entirely on the context they have access to.
+              Monorepos <strong>provide an ideal foundation for AI-powered development</strong>, enabling cross-project
+              reasoning and code generation. However, without proper context,
+              <strong>LLMs struggle to understand your workspace architecture</strong>, seeing only individual files
+              rather than the complete picture.
             </p>
           </section>
           <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-2">
-            <p>Nx bridges this gap by:</p>
+            <p>Nx's transforms your AI assistant by providing rich workspace metadata that enables it to:</p>
             <ul class="fragment-list">
               <li class="fragment">
-                Providing <strong>architectural awareness</strong> about your workspace structure and project
-                relationships
+                Understand your <strong>workspace architecture</strong> and project relationships
               </li>
-              <li class="fragment">
-                Feeding information about <strong>project ownership and team responsibilities</strong>
-              </li>
-              <li class="fragment">Sharing knowledge about <strong>available tasks</strong> and their configuration</li>
-              <li class="fragment">Including details about <strong>technology stacks</strong> and project types</li>
-              <li class="fragment">Supplying <strong>Nx documentation</strong> context for better assistance</li>
-            </ul>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-3">
-            <h3>How It Works</h3>
-            <img alt="diagram showing how nx enhances your LLM" src="img/nx-enhance-llm-illustration.png" />
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-4">
-            <p>
-              Nx maintains comprehensive metadata about your workspace to power features like caching and distributed
-              task execution. Nx Console, hooks into this rich metadata, post-processes it, and feeds it directly to
-              your LLM.
-            </p>
-          </section>
-          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-5">
-            <p>This enables your LLM to:</p>
-            <ul class="fragment-list">
-              <li class="fragment">
-                Understand the complete workspace structure, including applications and libraries
-              </li>
-              <li class="fragment">Know how different projects are connected and their dependency relationships</li>
-              <li class="fragment">Recognize project technology stacks and available tasks</li>
-              <li class="fragment">Access information about project ownership and team responsibilities</li>
-              <li class="fragment">Utilize Nx documentation to provide more accurate assistance</li>
+              <li class="fragment">Identify <strong>project owners</strong> and team responsibilities</li>
+              <li class="fragment">Access <strong>Nx documentation</strong> for accurate guidance</li>
+              <li class="fragment">Leverage <strong>code generators</strong> for consistent scaffoldin</li>
+              <li class="fragment">Connect to your <strong>CI pipeline</strong> to help fix failures</li>
             </ul>
             <aside class="notes">
+              <p><em>Slide End</em></p>
               <p>
-                This enhanced context allows your LLM to move beyond simple file-level operations to understand your
-                workspace at an architectural level, making it a more effective development partner.
+                The goal is to transform your AI assistant from a generic code helper into an architecturally-aware
+                collaborator that understands your specific workspace structure and can make intelligent, context-aware
+                decisions.
               </p>
             </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-3">
+            <h3>How Nx MCP Enhances Your LLM</h3>
+            <p>
+              Nx implements an MCP server that exposes workspace metadata to compatible AI assistants like GitHub
+              Copilot, Claude, and others.
+            </p>
+            <aside class="notes">
+              <p><em>Slide Start</em></p>
+              <p>
+                The Model Context Protocol (MCP) is an open standard that enables AI models to interact with your
+                development environment through a standardized interface.
+              </p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-4">
+            <img alt="Nx AI abstraction levels" src="img/nx-ai-abstraction-levels.png" />
+            <aside class="notes">
+              <p>
+                With the Nx MCP server, your AI assistant gains a "map" of your entire system being able to go from just
+                reasoning at the file level to seeing the more high level picture. This allows the LLM to move between
+                different abstraction levels - from high-level architecture down to specific implementation details.
+              </p>
+            </aside>
+          </section>
+          <section data-background-color="rgba(0, 0, 0, 0.75)" id="llm-5">
+            <p class="small">These are some of the available tools which the Nx MCP server exposes:</p>
+            <ul class="fragment-list smaller">
+              <li class="fragment">
+                <code>nx_workspace</code>: Provides a comprehensive view of your Nx configuration and project graph
+              </li>
+              <li class="fragment">
+                <code>nx_project_details</code>: Returns detailed configuration for specific projects
+              </li>
+              <li class="fragment"><code>nx_docs</code>: Retrieves relevant documentation based on queries</li>
+              <li class="fragment"><code>nx_generators</code>: Lists available code generators in your workspace</li>
+              <li class="fragment">
+                <code>nx_generator_schema</code>: Provides detailed schema information for generators
+              </li>
+              <li class="fragment">
+                <code>nx_visualize_graph</code>: Opens interactive project or task graph visualizations
+              </li>
+              <li class="fragment">
+                <code>nx_cloud_cipe_details</code>: Returns information about CI pipelines from Nx Cloud
+              </li>
+              <li class="fragment">
+                <code>nx_cloud_fix_cipe_failure</code>: Provides detailed information about CI failures to help fix
+                issues
+              </li>
+            </ul>
           </section>
         </section>
 
